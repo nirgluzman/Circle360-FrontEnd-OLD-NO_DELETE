@@ -35,7 +35,7 @@ export default function CircleSettingsMember(props) {
         top="0px"
         left="40px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "MemberName")}
+        {...getOverrideProps(overrides, "Member")}
       >
         <View
           width="350px"
@@ -64,7 +64,7 @@ export default function CircleSettingsMember(props) {
           top="2px"
           left="309px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "DeleteMember")}
+          {...getOverrideProps(overrides, "DeleteMemberIcon")}
         >
           <Icon
             width="17.5px"
@@ -99,7 +99,7 @@ export default function CircleSettingsMember(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="270px"
+          width="284px"
           height="unset"
           gap="unset"
           alignItems="unset"
@@ -107,11 +107,11 @@ export default function CircleSettingsMember(props) {
           top="5.71%"
           bottom="8.57%"
           left="5.71%"
-          right="17.14%"
+          right="13.14%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Member"
-          {...getOverrideProps(overrides, "Group1")}
+          {...getOverrideProps(overrides, "MemberName")}
         ></Text>
       </View>
     </View>

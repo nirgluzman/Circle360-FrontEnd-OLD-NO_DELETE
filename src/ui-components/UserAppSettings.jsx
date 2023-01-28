@@ -25,7 +25,7 @@ export default function UserAppSettings(props) {
       {...rest}
     >
       <View
-        width="350px"
+        width="351px"
         height="36px"
         display="block"
         gap="unset"
@@ -143,7 +143,7 @@ export default function UserAppSettings(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
+          width="65px"
           height="unset"
           gap="unset"
           alignItems="unset"
@@ -151,11 +151,11 @@ export default function UserAppSettings(props) {
           top="8.33%"
           bottom="8.33%"
           left="0%"
-          right="83.14%"
+          right="81.48%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="100 m"
-          {...getOverrideProps(overrides, "100 m")}
+          children="1 km"
+          {...getOverrideProps(overrides, "1 km")}
         ></Text>
         <View
           width="70px"
@@ -179,23 +179,23 @@ export default function UserAppSettings(props) {
           fontWeight="500"
           color="rgba(13,26,38,1)"
           lineHeight="30px"
-          textAlign="right"
+          textAlign="center"
           display="block"
           direction="column"
           justifyContent="unset"
-          width="64px"
+          width="68px"
           height="unset"
           gap="unset"
           alignItems="unset"
           position="absolute"
           top="8.33%"
           bottom="8.33%"
-          left="80.57%"
-          right="1.14%"
+          left="80.34%"
+          right="0.28%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="1 km"
-          {...getOverrideProps(overrides, "1 km")}
+          children="5 km"
+          {...getOverrideProps(overrides, "5 km")}
         ></Text>
       </View>
       <View
@@ -241,13 +241,13 @@ export default function UserAppSettings(props) {
           gap="unset"
           alignItems="unset"
           position="absolute"
-          top="5.71%"
-          bottom="8.57%"
+          top="6.71%"
+          bottom="7.57%"
           left="5.71%"
           right="17.14%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Radius settings"
+          children="Update radius"
           {...getOverrideProps(overrides, "Group137133126")}
         ></Text>
         <Text
@@ -397,7 +397,7 @@ export default function UserAppSettings(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
+          width="65px"
           height="unset"
           gap="unset"
           alignItems="unset"
@@ -405,11 +405,11 @@ export default function UserAppSettings(props) {
           top="8.33%"
           bottom="8.33%"
           left="0%"
-          right="84.86%"
+          right="81.43%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="3 min"
-          {...getOverrideProps(overrides, "3 min")}
+          children="5 min"
+          {...getOverrideProps(overrides, "5 min")}
         ></Text>
         <View
           width="70px"
@@ -433,11 +433,11 @@ export default function UserAppSettings(props) {
           fontWeight="500"
           color="rgba(13,26,38,1)"
           lineHeight="30px"
-          textAlign="right"
+          textAlign="center"
           display="block"
           direction="column"
           justifyContent="unset"
-          width="65px"
+          width="68px"
           height="unset"
           gap="unset"
           alignItems="unset"
@@ -445,11 +445,11 @@ export default function UserAppSettings(props) {
           top="8.33%"
           bottom="8.33%"
           left="80.29%"
-          right="1.14%"
+          right="0.29%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="10 min"
-          {...getOverrideProps(overrides, "10 min")}
+          children="1 hr"
+          {...getOverrideProps(overrides, "1 hr")}
         ></Text>
       </View>
       <View
@@ -495,13 +495,13 @@ export default function UserAppSettings(props) {
           gap="unset"
           alignItems="unset"
           position="absolute"
-          top="5.71%"
-          bottom="8.57%"
+          top="7%"
+          bottom="7.29%"
           left="5.71%"
           right="17.14%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Refresh rate"
+          children="Update frequency"
           {...getOverrideProps(overrides, "Group137133120")}
         ></Text>
         <Text
@@ -519,16 +519,16 @@ export default function UserAppSettings(props) {
           gap="unset"
           alignItems="unset"
           position="absolute"
-          top="40%"
-          bottom="8%"
+          top="41%"
+          bottom="7%"
           left="5.71%"
           right="6%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="How frequent do you want to update your location."
+          children="How often do you want to receive updates on your circles."
           {...getOverrideProps(
             overrides,
-            "How frequent do you want to update your location."
+            "How often do you want to receive updates on your circles."
           )}
         ></Text>
       </View>
@@ -575,8 +575,8 @@ export default function UserAppSettings(props) {
           gap="unset"
           alignItems="unset"
           position="absolute"
-          top="6%"
-          bottom="8%"
+          top="7%"
+          bottom="7%"
           left="5.71%"
           right="23.43%"
           padding="0px 0px 0px 0px"
@@ -599,8 +599,8 @@ export default function UserAppSettings(props) {
           gap="unset"
           alignItems="unset"
           position="absolute"
-          top="40%"
-          bottom="33.75%"
+          top="41%"
+          bottom="32.75%"
           left="5.71%"
           right="25.71%"
           padding="0px 0px 0px 0px"
@@ -698,7 +698,7 @@ export default function UserAppSettings(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="200px"
+        top="201px"
         left="38px"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "PushNotifications")}

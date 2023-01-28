@@ -10,9 +10,6 @@ import { ButtonProps, DividerProps, FlexProps, IconProps, ImageProps, TextProps,
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type LoginOverridesProps = {
     Login?: PrimitiveOverrideProps<ViewProps>;
-    Signupbutoon?: PrimitiveOverrideProps<ViewProps>;
-    Signup?: PrimitiveOverrideProps<FlexProps>;
-    label?: PrimitiveOverrideProps<TextProps>;
     SignupQuote?: PrimitiveOverrideProps<ViewProps>;
     "If you don\u2019t have an account, please sign up first."?: PrimitiveOverrideProps<TextProps>;
     AppleSignin?: PrimitiveOverrideProps<ViewProps>;
@@ -26,7 +23,7 @@ export declare type LoginOverridesProps = {
     OR?: PrimitiveOverrideProps<TextProps>;
     Divider36743137?: PrimitiveOverrideProps<DividerProps>;
     Signin?: PrimitiveOverrideProps<ViewProps>;
-    LoginButton?: PrimitiveOverrideProps<ViewProps>;
+    LoginButton36892685?: PrimitiveOverrideProps<ViewProps>;
     Button36743129?: PrimitiveOverrideProps<ButtonProps>;
     Input36892715?: PrimitiveOverrideProps<FlexProps>;
     placeholder36892716?: PrimitiveOverrideProps<TextProps>;
@@ -35,11 +32,13 @@ export declare type LoginOverridesProps = {
     "Please sign in to connect with your circle."?: PrimitiveOverrideProps<TextProps>;
     "SIGN IN"?: PrimitiveOverrideProps<TextProps>;
     BackToHomeAndIcon?: PrimitiveOverrideProps<ViewProps>;
-    image37132723?: PrimitiveOverrideProps<ImageProps>;
     BackButton?: PrimitiveOverrideProps<ViewProps>;
     MyIcon?: PrimitiveOverrideProps<ViewProps>;
     Vector?: PrimitiveOverrideProps<IconProps>;
     Home?: PrimitiveOverrideProps<TextProps>;
+    image37132723?: PrimitiveOverrideProps<ImageProps>;
+    LoginButton37452727?: PrimitiveOverrideProps<ViewProps>;
+    Button37452728?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
 export declare type LoginProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: LoginOverridesProps | undefined | null;

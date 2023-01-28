@@ -10,11 +10,13 @@ import { FlexProps, IconProps, TextProps, ViewProps } from "@aws-amplify/ui-reac
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type DashboardCircleOverridesProps = {
     DashboardCircle?: PrimitiveOverrideProps<FlexProps>;
-    GroupName?: PrimitiveOverrideProps<ViewProps>;
+    Circle?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 1164"?: PrimitiveOverrideProps<ViewProps>;
-    DeleteGroup?: PrimitiveOverrideProps<ViewProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
-    Group1?: PrimitiveOverrideProps<TextProps>;
+    CircleDeleteIcon?: PrimitiveOverrideProps<ViewProps>;
+    Vector36943887?: PrimitiveOverrideProps<IconProps>;
+    CircleConfigIcon?: PrimitiveOverrideProps<ViewProps>;
+    Vector37552729?: PrimitiveOverrideProps<IconProps>;
+    CircleName?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type DashboardCircleProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: DashboardCircleOverridesProps | undefined | null;

@@ -84,64 +84,50 @@ export default function DashboardHeader(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="25px"
-        left="135px"
+        top="calc(50% - 30px - 82.5px)"
+        left="calc(50% - 127.5px - -47.5px)"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "TitleIcon")}
       >
-        <View
-          width="255px"
+        <Image
+          width="60px"
           height="60px"
           display="block"
           gap="unset"
           alignItems="unset"
           justifyContent="unset"
           position="absolute"
-          top="calc(50% - 30px - 0px)"
-          left="calc(50% - 127.5px - 0px)"
+          top="0px"
+          right="0px"
+          borderRadius="160px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 1507")}
-        >
-          <Image
-            width="60px"
-            height="60px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            position="absolute"
-            top="0px"
-            right="0px"
-            borderRadius="160px"
-            padding="0px 0px 0px 0px"
-            objectFit="cover"
-            {...getOverrideProps(overrides, "image")}
-          ></Image>
-          <Text
-            fontFamily="Inter"
-            fontSize="32px"
-            fontWeight="500"
-            color="rgba(13,26,38,1)"
-            lineHeight="48px"
-            textAlign="center"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="161px"
-            height="44px"
-            gap="unset"
-            alignItems="unset"
-            position="absolute"
-            top="13.33%"
-            bottom="13.33%"
-            left="0%"
-            right="36.86%"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="My Circles"
-            {...getOverrideProps(overrides, "My Circles")}
-          ></Text>
-        </View>
+          objectFit="cover"
+          {...getOverrideProps(overrides, "image")}
+        ></Image>
+        <Text
+          fontFamily="Inter"
+          fontSize="32px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="48px"
+          textAlign="center"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="161px"
+          height="44px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="13.33%"
+          bottom="13.33%"
+          left="0%"
+          right="36.86%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="My Circles"
+          {...getOverrideProps(overrides, "My Circles")}
+        ></Text>
       </View>
     </View>
   );

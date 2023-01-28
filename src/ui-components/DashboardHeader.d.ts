@@ -15,7 +15,6 @@ export declare type DashboardHeaderOverridesProps = {
     CreateNewButton?: PrimitiveOverrideProps<ViewProps>;
     CreateNew?: PrimitiveOverrideProps<ButtonProps>;
     TitleIcon?: PrimitiveOverrideProps<ViewProps>;
-    "Frame 1507"?: PrimitiveOverrideProps<ViewProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
     "My Circles"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;

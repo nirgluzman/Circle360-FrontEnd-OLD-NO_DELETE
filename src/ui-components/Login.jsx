@@ -34,58 +34,6 @@ export default function Login(props) {
     >
       <View
         width="350px"
-        height="46px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="calc(50% - 23px - -351px)"
-        left="calc(50% - 175px - 0px)"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Signupbutoon")}
-      >
-        <Flex
-          gap="0"
-          direction="row"
-          width="350px"
-          height="unset"
-          justifyContent="center"
-          alignItems="center"
-          position="absolute"
-          top="0px"
-          left="0px"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="12px"
-          padding="7px 15px 7px 15px"
-          backgroundColor="rgba(76,203,104,1)"
-          {...getOverrideProps(overrides, "Signup")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(0,0,0,1)"
-            lineHeight="30px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="SIGN UP"
-            {...getOverrideProps(overrides, "label")}
-          ></Text>
-        </Flex>
-      </View>
-      <View
-        width="324px"
         height="21px"
         display="block"
         gap="unset"
@@ -93,7 +41,7 @@ export default function Login(props) {
         justifyContent="unset"
         position="absolute"
         top="calc(50% - 10.5px - -287.5px)"
-        left="calc(50% - 162px - 13px)"
+        left="calc(50% - 175px - 0px)"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "SignupQuote")}
       >
@@ -107,7 +55,7 @@ export default function Login(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
+          width="350px"
           height="unset"
           gap="unset"
           alignItems="unset"
@@ -291,7 +239,7 @@ export default function Login(props) {
           top="calc(50% - 23px - -108px)"
           left="calc(50% - 175px - 0px)"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "LoginButton")}
+          {...getOverrideProps(overrides, "LoginButton36892685")}
         >
           <Button
             width="350px"
@@ -394,7 +342,7 @@ export default function Login(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
+          width="332px"
           height="unset"
           gap="unset"
           alignItems="unset"
@@ -402,7 +350,7 @@ export default function Login(props) {
           top="11.45%"
           bottom="80.53%"
           left="0%"
-          right="21.71%"
+          right="5.14%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Please sign in to connect with your circle."
@@ -449,21 +397,6 @@ export default function Login(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "BackToHomeAndIcon")}
       >
-        <Image
-          width="60px"
-          height="60px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="0px"
-          right="0px"
-          borderRadius="160px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "image37132723")}
-        ></Image>
         <View
           padding="0px 0px 0px 0px"
           width="78px"
@@ -536,6 +469,47 @@ export default function Login(props) {
             {...getOverrideProps(overrides, "Home")}
           ></Text>
         </View>
+        <Image
+          width="60px"
+          height="60px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="0px"
+          right="0px"
+          borderRadius="160px"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          {...getOverrideProps(overrides, "image37132723")}
+        ></Image>
+      </View>
+      <View
+        width="350px"
+        height="46px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="calc(50% - 23px - -354px)"
+        left="calc(50% - 175px - 0px)"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "LoginButton37452727")}
+      >
+        <Button
+          width="350px"
+          position="absolute"
+          borderRadius="12px"
+          top="0px"
+          left="0px"
+          size="large"
+          isDisabled={false}
+          variation="primary"
+          children="SIGN UP"
+          {...getOverrideProps(overrides, "Button37452728")}
+        ></Button>
       </View>
     </View>
   );

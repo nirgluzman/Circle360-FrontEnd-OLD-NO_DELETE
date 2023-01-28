@@ -10,11 +10,11 @@ import { IconProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type CircleSettingsMemberOverridesProps = {
     CircleSettingsMember?: PrimitiveOverrideProps<ViewProps>;
-    MemberName?: PrimitiveOverrideProps<ViewProps>;
+    Member?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 1164"?: PrimitiveOverrideProps<ViewProps>;
-    DeleteMember?: PrimitiveOverrideProps<ViewProps>;
+    DeleteMemberIcon?: PrimitiveOverrideProps<ViewProps>;
     Vector?: PrimitiveOverrideProps<IconProps>;
-    Group1?: PrimitiveOverrideProps<TextProps>;
+    MemberName?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type CircleSettingsMemberProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: CircleSettingsMemberOverridesProps | undefined | null;

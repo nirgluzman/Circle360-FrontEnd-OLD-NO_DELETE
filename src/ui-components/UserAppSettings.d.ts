@@ -17,9 +17,9 @@ export declare type UserAppSettingsOverridesProps = {
     "Rectangle 29037172801"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 28937172802"?: PrimitiveOverrideProps<ViewProps>;
     "Ellipse 837172803"?: PrimitiveOverrideProps<IconProps>;
-    "100 m"?: PrimitiveOverrideProps<TextProps>;
-    "Rectangle 116537152935"?: PrimitiveOverrideProps<ViewProps>;
     "1 km"?: PrimitiveOverrideProps<TextProps>;
+    "Rectangle 116537152935"?: PrimitiveOverrideProps<ViewProps>;
+    "5 km"?: PrimitiveOverrideProps<TextProps>;
     RadiusSettings?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 116437133123"?: PrimitiveOverrideProps<ViewProps>;
     Group137133126?: PrimitiveOverrideProps<TextProps>;
@@ -31,13 +31,13 @@ export declare type UserAppSettingsOverridesProps = {
     "Rectangle 29037152928"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 28937152929"?: PrimitiveOverrideProps<ViewProps>;
     "Ellipse 837152930"?: PrimitiveOverrideProps<IconProps>;
-    "3 min"?: PrimitiveOverrideProps<TextProps>;
+    "5 min"?: PrimitiveOverrideProps<TextProps>;
     "Rectangle 116537152934"?: PrimitiveOverrideProps<ViewProps>;
-    "10 min"?: PrimitiveOverrideProps<TextProps>;
+    "1 hr"?: PrimitiveOverrideProps<TextProps>;
     "Refresh rate"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 116437133117"?: PrimitiveOverrideProps<ViewProps>;
     Group137133120?: PrimitiveOverrideProps<TextProps>;
-    "How frequent do you want to update your location."?: PrimitiveOverrideProps<TextProps>;
+    "How often do you want to receive updates on your circles."?: PrimitiveOverrideProps<TextProps>;
     Incognito?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 116437133111"?: PrimitiveOverrideProps<ViewProps>;
     Group137133114?: PrimitiveOverrideProps<TextProps>;
