@@ -10,13 +10,10 @@ import { ButtonProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-r
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type DashboardHeaderOverridesProps = {
     DashboardHeader?: PrimitiveOverrideProps<ViewProps>;
-    JoinButton?: PrimitiveOverrideProps<ViewProps>;
-    Join?: PrimitiveOverrideProps<ButtonProps>;
-    CreateNewButton?: PrimitiveOverrideProps<ViewProps>;
-    CreateNew?: PrimitiveOverrideProps<ButtonProps>;
-    TitleIcon?: PrimitiveOverrideProps<ViewProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
-    "My Circles"?: PrimitiveOverrideProps<TextProps>;
+    JoinButton?: PrimitiveOverrideProps<ButtonProps>;
+    CreateNewButton?: PrimitiveOverrideProps<ButtonProps>;
+    Title?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type DashboardHeaderProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: DashboardHeaderOverridesProps | undefined | null;

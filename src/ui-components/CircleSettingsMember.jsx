@@ -86,7 +86,7 @@ export default function CircleSettingsMember(props) {
             bottom="12.5%"
             left="20.83%"
             right="20.83%"
-            {...getOverrideProps(overrides, "Vector")}
+            {...getOverrideProps(overrides, "DeleteIcon")}
           ></Icon>
         </View>
         <Text

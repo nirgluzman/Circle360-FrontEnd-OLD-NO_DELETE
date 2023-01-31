@@ -10,6 +10,11 @@
       "StackName": "amplify-circle360frontend-dev-132541",
       "StackId": "arn:aws:cloudformation:us-east-1:493101195870:stack/amplify-circle360frontend-dev-132541/8d8f9d80-9d74-11ed-a7a8-0a207f235b77",
       "AmplifyAppId": "d25fsp20n78pkx"
+    },
+    "categories": {
+      "auth": {
+        "circle360frontend": {}
+      }
     }
   }
 }

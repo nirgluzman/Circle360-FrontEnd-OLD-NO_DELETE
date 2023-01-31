@@ -8,15 +8,14 @@ import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ButtonProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LandingPageOverridesProps = {
-    LandingPage?: PrimitiveOverrideProps<ViewProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
-    Title?: PrimitiveOverrideProps<ViewProps>;
+export declare type HomeOverridesProps = {
+    Home?: PrimitiveOverrideProps<ViewProps>;
+    GetStartedButton?: PrimitiveOverrideProps<ButtonProps>;
     "A new way to communicate with your friends"?: PrimitiveOverrideProps<TextProps>;
-    "Circle 360"?: PrimitiveOverrideProps<TextProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
+    Title?: PrimitiveOverrideProps<TextProps>;
+    Logo?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
-export declare type LandingPageProps = React.PropsWithChildren<Partial<ViewProps> & {
-    overrides?: LandingPageOverridesProps | undefined | null;
+export declare type HomeProps = React.PropsWithChildren<Partial<ViewProps> & {
+    overrides?: HomeOverridesProps | undefined | null;
 }>;
-export default function LandingPage(props: LandingPageProps): React.ReactElement;
+export default function Home(props: HomeProps): React.ReactElement;

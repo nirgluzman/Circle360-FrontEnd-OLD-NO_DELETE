@@ -10,20 +10,16 @@ import { FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amp
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type UserDetailsOverridesProps = {
     UserDetails?: PrimitiveOverrideProps<ViewProps>;
-    FormField?: PrimitiveOverrideProps<ViewProps>;
     "Your email address cannot be changed."?: PrimitiveOverrideProps<TextProps>;
     Email?: PrimitiveOverrideProps<FlexProps>;
-    placeholder37133074?: PrimitiveOverrideProps<TextProps>;
-    LastName?: PrimitiveOverrideProps<FlexProps>;
-    placeholder37133070?: PrimitiveOverrideProps<TextProps>;
-    FirstName?: PrimitiveOverrideProps<FlexProps>;
-    placeholder37133072?: PrimitiveOverrideProps<TextProps>;
-    BackButton?: PrimitiveOverrideProps<ViewProps>;
-    MyIcon?: PrimitiveOverrideProps<ViewProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
-    Profile?: PrimitiveOverrideProps<TextProps>;
-    "Profile Details"?: PrimitiveOverrideProps<TextProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
+    EmailPlaceholder?: PrimitiveOverrideProps<TextProps>;
+    UserNameInput?: PrimitiveOverrideProps<FlexProps>;
+    UserNamePlaceholder?: PrimitiveOverrideProps<TextProps>;
+    Title?: PrimitiveOverrideProps<TextProps>;
+    BackToUserSettings?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
+    Text?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type UserDetailsProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: UserDetailsOverridesProps | undefined | null;

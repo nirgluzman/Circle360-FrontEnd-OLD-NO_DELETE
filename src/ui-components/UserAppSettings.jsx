@@ -48,7 +48,7 @@ export default function UserAppSettings(props) {
           top="0px"
           left="68px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "SliderField37172794")}
+          {...getOverrideProps(overrides, "Slider37172794")}
         >
           <Flex
             gap="16px"
@@ -76,7 +76,7 @@ export default function UserAppSettings(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 20937172800")}
+              {...getOverrideProps(overrides, "Frame37172800")}
             >
               <View
                 width="197px"
@@ -133,30 +133,6 @@ export default function UserAppSettings(props) {
             </View>
           </Flex>
         </Flex>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="65px"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="8.33%"
-          bottom="8.33%"
-          left="0%"
-          right="81.48%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="1 km"
-          {...getOverrideProps(overrides, "1 km")}
-        ></Text>
         <View
           width="70px"
           height="36px"
@@ -197,6 +173,30 @@ export default function UserAppSettings(props) {
           children="5 km"
           {...getOverrideProps(overrides, "5 km")}
         ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="65px"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="8.33%"
+          bottom="8.33%"
+          left="0%"
+          right="81.48%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="1 km"
+          {...getOverrideProps(overrides, "1 km")}
+        ></Text>
       </View>
       <View
         width="350px"
@@ -228,30 +228,6 @@ export default function UserAppSettings(props) {
         ></View>
         <Text
           fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="270px"
-          height="85.71px"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="6.71%"
-          bottom="7.57%"
-          left="5.71%"
-          right="17.14%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Update radius"
-          {...getOverrideProps(overrides, "Group137133126")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
           fontSize="14px"
           fontWeight="400"
           color="rgba(13,26,38,1)"
@@ -277,6 +253,30 @@ export default function UserAppSettings(props) {
             "Set the radius for live notifications once your friends are nearby."
           )}
         ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="270px"
+          height="85.71px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="6.71%"
+          bottom="7.57%"
+          left="5.71%"
+          right="17.14%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Update radius"
+          {...getOverrideProps(overrides, "Title37133126")}
+        ></Text>
       </View>
       <View
         width="350px"
@@ -289,7 +289,7 @@ export default function UserAppSettings(props) {
         top="566px"
         left="37px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "RefreshRateSlider")}
+        {...getOverrideProps(overrides, "UpdateFrequencySlider")}
       >
         <Flex
           gap="8px"
@@ -302,7 +302,7 @@ export default function UserAppSettings(props) {
           top="0px"
           left="68px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "SliderField37152922")}
+          {...getOverrideProps(overrides, "Slider37152922")}
         >
           <Flex
             gap="16px"
@@ -330,7 +330,7 @@ export default function UserAppSettings(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 20937152927")}
+              {...getOverrideProps(overrides, "Frame37152927")}
             >
               <View
                 width="197px"
@@ -387,30 +387,6 @@ export default function UserAppSettings(props) {
             </View>
           </Flex>
         </Flex>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="65px"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="8.33%"
-          bottom="8.33%"
-          left="0%"
-          right="81.43%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="5 min"
-          {...getOverrideProps(overrides, "5 min")}
-        ></Text>
         <View
           width="70px"
           height="36px"
@@ -451,6 +427,30 @@ export default function UserAppSettings(props) {
           children="1 hr"
           {...getOverrideProps(overrides, "1 hr")}
         ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="65px"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="8.33%"
+          bottom="8.33%"
+          left="0%"
+          right="81.43%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="5 min"
+          {...getOverrideProps(overrides, "5 min")}
+        ></Text>
       </View>
       <View
         width="350px"
@@ -463,7 +463,7 @@ export default function UserAppSettings(props) {
         top="460px"
         left="38px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Refresh rate")}
+        {...getOverrideProps(overrides, "UpdateFrequency")}
       >
         <View
           width="350px"
@@ -480,30 +480,6 @@ export default function UserAppSettings(props) {
           backgroundColor="rgba(239,240,240,1)"
           {...getOverrideProps(overrides, "Rectangle 116437133117")}
         ></View>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="270px"
-          height="85.71px"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="7%"
-          bottom="7.29%"
-          left="5.71%"
-          right="17.14%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Update frequency"
-          {...getOverrideProps(overrides, "Group137133120")}
-        ></Text>
         <Text
           fontFamily="Inter"
           fontSize="14px"
@@ -530,6 +506,30 @@ export default function UserAppSettings(props) {
             overrides,
             "How often do you want to receive updates on your circles."
           )}
+        ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="270px"
+          height="85.71px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="7%"
+          bottom="7.29%"
+          left="5.71%"
+          right="17.14%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Update frequency"
+          {...getOverrideProps(overrides, "Title37133120")}
         ></Text>
       </View>
       <View
@@ -562,30 +562,6 @@ export default function UserAppSettings(props) {
         ></View>
         <Text
           fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="248px"
-          height="86px"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="7%"
-          bottom="7%"
-          left="5.71%"
-          right="23.43%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Incognito"
-          {...getOverrideProps(overrides, "Group137133114")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
           fontSize="14px"
           fontWeight="400"
           color="rgba(13,26,38,1)"
@@ -610,6 +586,30 @@ export default function UserAppSettings(props) {
             overrides,
             "Make me not visible in all my circles."
           )}
+        ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="248px"
+          height="86px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="7%"
+          bottom="7%"
+          left="5.71%"
+          right="23.43%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Incognito"
+          {...getOverrideProps(overrides, "Title37133114")}
         ></Text>
         <Flex
           gap="8px"
@@ -720,30 +720,6 @@ export default function UserAppSettings(props) {
         ></View>
         <Text
           fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="248px"
-          height="88px"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="6%"
-          bottom="6%"
-          left="5.71%"
-          right="23.43%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Push notifications"
-          {...getOverrideProps(overrides, "Group137133109")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
           fontSize="14px"
           fontWeight="400"
           color="rgba(13,26,38,1)"
@@ -768,6 +744,30 @@ export default function UserAppSettings(props) {
             overrides,
             "Allow app to send push notifications."
           )}
+        ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="248px"
+          height="88px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="6%"
+          bottom="6%"
+          left="5.71%"
+          right="23.43%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Push notifications"
+          {...getOverrideProps(overrides, "Title37133109")}
         ></Text>
         <Flex
           gap="8px"
@@ -848,145 +848,103 @@ export default function UserAppSettings(props) {
           </Flex>
         </Flex>
       </View>
+      <Text
+        fontFamily="Inter"
+        fontSize="32px"
+        fontWeight="500"
+        color="rgba(13,26,38,1)"
+        lineHeight="48px"
+        textAlign="center"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="344px"
+        height="44px"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="12.02%"
+        bottom="83.26%"
+        left="9.53%"
+        right="10.47%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="App Settings"
+        {...getOverrideProps(overrides, "Title37133091")}
+      ></Text>
       <View
-        width="350px"
-        height="131px"
+        padding="0px 0px 0px 0px"
+        width="79px"
+        height="24px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 65.5px - 375.5px)"
-        left="calc(50% - 175px - 0px)"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "BackProfileandTitle")}
+        top="43px"
+        left="43px"
+        {...getOverrideProps(overrides, "BackToUserSettings")}
       >
+        <Icon
+          width="18px"
+          height="15px"
+          viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
+          paths={[
+            {
+              d: "M7 4L7 0L0 7L7 14L7 9.9C12 9.9 15.5 11.5 18 15C17 10 14 5 7 4Z",
+              fill: "rgba(13,26,38,1)",
+              fillRule: "nonzero",
+            },
+          ]}
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="20.83%"
+          bottom="16.67%"
+          left="0%"
+          right="77.22%"
+          {...getOverrideProps(overrides, "BackIcon")}
+        ></Icon>
         <Text
           fontFamily="Inter"
-          fontSize="32px"
-          fontWeight="500"
+          fontSize="16px"
+          fontWeight="400"
           color="rgba(13,26,38,1)"
-          lineHeight="48px"
-          textAlign="center"
+          lineHeight="24px"
+          textAlign="left"
           display="block"
           direction="column"
           justifyContent="unset"
-          width="344px"
-          height="44px"
+          width="unset"
+          height="unset"
           gap="unset"
           alignItems="unset"
           position="absolute"
-          top="66.41%"
-          bottom="0%"
-          left="0.86%"
-          right="0.86%"
+          top="0px"
+          left="30px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="App Settings"
-          {...getOverrideProps(overrides, "App Settings")}
+          children="Profile"
+          {...getOverrideProps(overrides, "Text")}
         ></Text>
-        <View
-          width="350px"
-          height="60px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="calc(50% - 30px - 35.5px)"
-          left="calc(50% - 175px - 0px)"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Back to profile")}
-        >
-          <Image
-            width="60px"
-            height="60px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            position="absolute"
-            top="0px"
-            right="0px"
-            borderRadius="160px"
-            padding="0px 0px 0px 0px"
-            objectFit="cover"
-            {...getOverrideProps(overrides, "image")}
-          ></Image>
-          <View
-            padding="0px 0px 0px 0px"
-            width="82px"
-            height="24px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            position="absolute"
-            top="18px"
-            left="0px"
-            {...getOverrideProps(overrides, "BackButton")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="0px"
-              left="0px"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "MyIcon")}
-            >
-              <Icon
-                width="18px"
-                height="15px"
-                viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
-                paths={[
-                  {
-                    d: "M7 4L7 0L0 7L7 14L7 9.9C12 9.9 15.5 11.5 18 15C17 10 14 5 7 4Z",
-                    fill: "rgba(13,26,38,1)",
-                    fillRule: "nonzero",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="20.83%"
-                bottom="16.67%"
-                left="12.5%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(13,26,38,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              position="absolute"
-              top="0px"
-              left="33px"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Profile"
-              {...getOverrideProps(overrides, "Profile")}
-            ></Text>
-          </View>
-        </View>
       </View>
+      <Image
+        width="60px"
+        height="60px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="25px"
+        right="40px"
+        borderRadius="160px"
+        padding="0px 0px 0px 0px"
+        objectFit="cover"
+        {...getOverrideProps(overrides, "ProfileImage")}
+      ></Image>
     </View>
   );
 }

@@ -8,12 +8,10 @@ import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { IconProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type MyIconOverridesProps = {
-    MyIcon?: PrimitiveOverrideProps<IconProps>;
+export declare type MyIcontype23OverridesProps = {
+    MyIcontype23?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
-export declare type MyIconProps = React.PropsWithChildren<Partial<IconProps> & {
-    type?: "alert" | "arrow-right" | "bookmark_border" | "chat" | "chat-bubble-outline" | "close" | "delete" | "edit" | "favorite" | "favorite_border" | "group" | "info" | "more_horiz" | "more_vert" | "reply" | "send" | "share" | "shopping_bag" | "shuffle" | "type22" | "type23" | "warning";
-} & {
-    overrides?: MyIconOverridesProps | undefined | null;
+export declare type MyIcontype23Props = React.PropsWithChildren<Partial<IconProps> & {
+    overrides?: MyIcontype23OverridesProps | undefined | null;
 }>;
-export default function MyIcon(props: MyIconProps): React.ReactElement;
+export default function MyIcontype23(props: MyIcontype23Props): React.ReactElement;

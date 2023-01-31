@@ -10,23 +10,19 @@ import { ButtonProps, FlexProps, IconProps, ImageProps, TextProps, ViewProps } f
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type SendInviteOverridesProps = {
     SendInvite?: PrimitiveOverrideProps<ViewProps>;
-    QRCode?: PrimitiveOverrideProps<ImageProps>;
-    InvitationCode37242876?: PrimitiveOverrideProps<ViewProps>;
-    InvitationCode37132918?: PrimitiveOverrideProps<TextProps>;
+    QRCodeImage?: PrimitiveOverrideProps<ImageProps>;
+    InvitationCode?: PrimitiveOverrideProps<TextProps>;
     "Here is your invitation code:"?: PrimitiveOverrideProps<TextProps>;
-    SendInviteForm?: PrimitiveOverrideProps<ViewProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
-    Input?: PrimitiveOverrideProps<FlexProps>;
+    SendInvite37242856?: PrimitiveOverrideProps<ViewProps>;
+    SendInviteButton?: PrimitiveOverrideProps<ButtonProps>;
+    EmailInput?: PrimitiveOverrideProps<FlexProps>;
     placeholder?: PrimitiveOverrideProps<TextProps>;
-    SendInviteText?: PrimitiveOverrideProps<ViewProps>;
     "Please enter the email of the member you would like to invite:"?: PrimitiveOverrideProps<TextProps>;
-    "Invite New Member"?: PrimitiveOverrideProps<TextProps>;
-    SendInviteHeader?: PrimitiveOverrideProps<ViewProps>;
-    BackButton?: PrimitiveOverrideProps<ViewProps>;
-    MyIcon?: PrimitiveOverrideProps<ViewProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
-    "My Circles"?: PrimitiveOverrideProps<TextProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
+    Title?: PrimitiveOverrideProps<TextProps>;
+    BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
+    Text?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type SendInviteProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: SendInviteOverridesProps | undefined | null;
