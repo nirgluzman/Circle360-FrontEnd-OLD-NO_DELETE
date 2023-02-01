@@ -390,31 +390,9 @@ export default function Signin(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Home"
-          {...getOverrideProps(overrides, "Text37132721")}
+          {...getOverrideProps(overrides, "Text")}
         ></Text>
       </View>
-      <Text
-        fontFamily="Inter"
-        fontSize="16px"
-        fontWeight="400"
-        color="rgba(0,0,0,1)"
-        lineHeight="24px"
-        textAlign="left"
-        display="block"
-        direction="column"
-        justifyContent="unset"
-        width="unset"
-        height="unset"
-        gap="unset"
-        alignItems="unset"
-        position="absolute"
-        top="315px"
-        left="366px"
-        padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children=""
-        {...getOverrideProps(overrides, "Text38082780")}
-      ></Text>
     </View>
   );
 }

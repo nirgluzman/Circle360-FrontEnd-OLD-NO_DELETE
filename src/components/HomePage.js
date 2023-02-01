@@ -10,11 +10,12 @@ export default function HomePage() {
 
   const HomeOverrides = {
     Logo: {
+      alt: "Circle360 logo",
       src: logo,
     },
     GetStartedButton: {
       className: "custom-btn",
-      onClick: () => navigate("/signin"),
+      onClick: () => navigate("/auth"),
     },
   };
 

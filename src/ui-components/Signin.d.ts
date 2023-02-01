@@ -31,8 +31,7 @@ export declare type SigninOverridesProps = {
     Logo?: PrimitiveOverrideProps<ImageProps>;
     BackToHome?: PrimitiveOverrideProps<ViewProps>;
     BackIcon?: PrimitiveOverrideProps<IconProps>;
-    Text37132721?: PrimitiveOverrideProps<TextProps>;
-    Text38082780?: PrimitiveOverrideProps<TextProps>;
+    Text?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type SigninProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: SigninOverridesProps | undefined | null;

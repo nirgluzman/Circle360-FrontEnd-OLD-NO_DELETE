@@ -1,37 +1,14 @@
 import "./App.css";
 
-import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import HomePage from "./components/HomePage";
-import SigninPage from "./components/SigninPage";
-import SignupPage from "./components/SignupPage";
+import AuthPage from "./components/AuthPage";
+import DashboardPage from "./components/DashboardPage";
 
 import { Auth, Hub } from "aws-amplify";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-
-  const assessLoggedInState = () => {
-    Auth.currentAuthenticatedUser()
-      .then((sess) => {
-        console.log("logged in", sess);
-        setLoggedIn(true);
-      })
-      .catch(() => {
-        console.log("not logged in");
-        setLoggedIn(false);
-      });
-  };
-
-  const onSignin = () => {
-    setLoggedIn(true);
-  };
-
-  useEffect(() => {
-    assessLoggedInState();
-  }, []);
-
   Hub.listen("auth", (data) => {
     switch (data.payload.event) {
       case "signIn":
@@ -55,8 +32,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/signin" element={<SigninPage onSignin={onSignin} />} />
-        <Route path="/signup" element={<SignupPage onSignin={onSignin} />} />
+        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </div>
   );

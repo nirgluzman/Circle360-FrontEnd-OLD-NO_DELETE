@@ -125,7 +125,7 @@ export default function UserDetails(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="User name"
+          children="Nickname"
           {...getOverrideProps(overrides, "UserNamePlaceholder")}
         ></Text>
       </Flex>

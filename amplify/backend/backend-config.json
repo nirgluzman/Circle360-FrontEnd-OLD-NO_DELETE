@@ -17,10 +17,10 @@
           ],
           "passwordPolicyMinLength": 8
         },
-        "signupAttributes": [
-          "NICKNAME"
+        "signupAttributes": [],
+        "socialProviders": [
+          "GOOGLE"
         ],
-        "socialProviders": [],
         "usernameAttributes": [
           "EMAIL"
         ],
