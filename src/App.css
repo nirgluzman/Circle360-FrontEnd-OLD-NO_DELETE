@@ -13,3 +13,10 @@ html {
 .custom-btn:hover {
   transform: scale(1.1);
 }
+
+.map-container {
+  align-self: center;
+  width: 80vw;
+  height: 60vh;
+  margin: 10 auto;
+}
