@@ -27,13 +27,11 @@ export declare type UserSettingsOverridesProps = {
     Vector37152788?: PrimitiveOverrideProps<IconProps>;
     ">37132983"?: PrimitiveOverrideProps<TextProps>;
     UserSettingsPhotoSettings?: PrimitiveOverrideProps<ViewProps>;
-    Vector37152775?: PrimitiveOverrideProps<IconProps>;
+    EditButton?: PrimitiveOverrideProps<IconProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
-    UserSettingsHeader?: PrimitiveOverrideProps<ViewProps>;
     Profile?: PrimitiveOverrideProps<TextProps>;
-    BackButton?: PrimitiveOverrideProps<ViewProps>;
-    MyIcon?: PrimitiveOverrideProps<ViewProps>;
-    Vector37132947?: PrimitiveOverrideProps<IconProps>;
+    BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
     "My Circles"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type UserSettingsProps = React.PropsWithChildren<Partial<ViewProps> & {

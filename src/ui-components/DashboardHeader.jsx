@@ -76,59 +76,45 @@ export default function DashboardHeader(props) {
           {...getOverrideProps(overrides, "CreateNew")}
         ></Button>
       </View>
-      <View
-        width="255px"
+      <Text
+        fontFamily="Inter"
+        fontSize="32px"
+        fontWeight="500"
+        color="rgba(13,26,38,1)"
+        lineHeight="48px"
+        textAlign="center"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="161px"
+        height="44px"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="12%"
+        bottom="72%"
+        left="31.4%"
+        right="31.16%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="My Circles"
+        {...getOverrideProps(overrides, "My Circles")}
+      ></Text>
+      <Image
+        width="60px"
         height="60px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 30px - 82.5px)"
-        left="calc(50% - 127.5px - -47.5px)"
+        top="25px"
+        right="40px"
+        borderRadius="160px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "TitleIcon")}
-      >
-        <Image
-          width="60px"
-          height="60px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="0px"
-          right="0px"
-          borderRadius="160px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
-        <Text
-          fontFamily="Inter"
-          fontSize="32px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="48px"
-          textAlign="center"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="161px"
-          height="44px"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="13.33%"
-          bottom="13.33%"
-          left="0%"
-          right="36.86%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="My Circles"
-          {...getOverrideProps(overrides, "My Circles")}
-        ></Text>
-      </View>
+        objectFit="cover"
+        {...getOverrideProps(overrides, "ProfileImage")}
+      ></Image>
     </View>
   );
 }

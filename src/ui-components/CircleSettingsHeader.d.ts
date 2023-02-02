@@ -12,16 +12,13 @@ export declare type CircleSettingsHeaderOverridesProps = {
     CircleSettingsHeader?: PrimitiveOverrideProps<ViewProps>;
     SendInviteButton?: PrimitiveOverrideProps<ViewProps>;
     Button?: PrimitiveOverrideProps<ButtonProps>;
-    GroupChenges?: PrimitiveOverrideProps<ViewProps>;
-    MyIcon37152740?: PrimitiveOverrideProps<ViewProps>;
-    Vector37152741?: PrimitiveOverrideProps<IconProps>;
-    Group?: PrimitiveOverrideProps<TextProps>;
-    HeaderCircleSettings?: PrimitiveOverrideProps<ViewProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
-    BackButton?: PrimitiveOverrideProps<ViewProps>;
-    MyIcon37132849?: PrimitiveOverrideProps<ViewProps>;
-    Vector37132850?: PrimitiveOverrideProps<IconProps>;
+    Group?: PrimitiveOverrideProps<ViewProps>;
+    EditIcon?: PrimitiveOverrideProps<IconProps>;
+    GroupName?: PrimitiveOverrideProps<TextProps>;
+    BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
     "My Circles"?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type CircleSettingsHeaderProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: CircleSettingsHeaderOverridesProps | undefined | null;

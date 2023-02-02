@@ -18,12 +18,11 @@ export declare type UserDetailsOverridesProps = {
     placeholder37133070?: PrimitiveOverrideProps<TextProps>;
     FirstName?: PrimitiveOverrideProps<FlexProps>;
     placeholder37133072?: PrimitiveOverrideProps<TextProps>;
-    BackButton?: PrimitiveOverrideProps<ViewProps>;
-    MyIcon?: PrimitiveOverrideProps<ViewProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
-    Profile?: PrimitiveOverrideProps<TextProps>;
     "Profile Details"?: PrimitiveOverrideProps<TextProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
+    BackToUserSettings?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
+    Profile?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type UserDetailsProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: UserDetailsOverridesProps | undefined | null;

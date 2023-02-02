@@ -16,7 +16,7 @@ import {
   Text,
   View,
 } from "@aws-amplify/ui-react";
-export default function Signup(props) {
+export default function Signin(props) {
   const { overrides, ...rest } = props;
   return (
     <View
@@ -29,7 +29,7 @@ export default function Signup(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...getOverrideProps(overrides, "Signup")}
+      {...getOverrideProps(overrides, "Signin")}
       {...rest}
     >
       <View
@@ -40,7 +40,74 @@ export default function Signup(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 23px - -314px)"
+        top="calc(50% - 23px - -354px)"
+        left="calc(50% - 175px - 0px)"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Signup")}
+      >
+        <Button
+          width="350px"
+          position="absolute"
+          borderRadius="12px"
+          top="0px"
+          left="0px"
+          size="large"
+          isDisabled={false}
+          variation="primary"
+          children="SIGN UP"
+          {...getOverrideProps(overrides, "Button37452728")}
+        ></Button>
+      </View>
+      <View
+        width="350px"
+        height="21px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="calc(50% - 10.5px - -287.5px)"
+        left="calc(50% - 175px - 0px)"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "SignupMessage")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="14px"
+          fontWeight="400"
+          color="rgba(13,26,38,1)"
+          lineHeight="21px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="350px"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="0%"
+          bottom="0%"
+          left="0%"
+          right="0%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="If you don’t have an account, please sign up first."
+          {...getOverrideProps(
+            overrides,
+            "If you don\u2019t have an account, please sign up first."
+          )}
+        ></Text>
+      </View>
+      <View
+        width="350px"
+        height="46px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="calc(50% - 23px - -155px)"
         left="calc(50% - 175px - 0px)"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "AppleSignin")}
@@ -49,14 +116,14 @@ export default function Signup(props) {
           width="350px"
           position="absolute"
           borderRadius="12px"
-          top="2px"
+          top="0px"
           left="0px"
           backgroundColor="rgba(239,240,240,1)"
           size="large"
           isDisabled={false}
           variation="primary"
           children="Sign in with Apple"
-          {...getOverrideProps(overrides, "Button36943244")}
+          {...getOverrideProps(overrides, "Button36743305")}
         ></Button>
         <Image
           width="30px"
@@ -71,7 +138,7 @@ export default function Signup(props) {
           borderRadius="160px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          {...getOverrideProps(overrides, "image36943245")}
+          {...getOverrideProps(overrides, "image36743179")}
         ></Image>
       </View>
       <View
@@ -82,7 +149,7 @@ export default function Signup(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 23px - -255px)"
+        top="calc(50% - 23px - -94px)"
         left="calc(50% - 175px - 0px)"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "GoogleSignin")}
@@ -98,7 +165,7 @@ export default function Signup(props) {
           isDisabled={false}
           variation="primary"
           children="Sign in with Google"
-          {...getOverrideProps(overrides, "Button36943247")}
+          {...getOverrideProps(overrides, "Button36743301")}
         ></Button>
         <Image
           width="30px"
@@ -113,7 +180,7 @@ export default function Signup(props) {
           borderRadius="160px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          {...getOverrideProps(overrides, "image36943248")}
+          {...getOverrideProps(overrides, "image36743175")}
         ></Image>
       </View>
       <View
@@ -124,20 +191,20 @@ export default function Signup(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 12px - -158px)"
+        top="calc(50% - 12px - 2px)"
         left="calc(50% - 175px - 0px)"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Divider37222786")}
+        {...getOverrideProps(overrides, "Divider37152845")}
       >
         <Divider
           width="150px"
           position="absolute"
-          top="50%"
-          bottom="45.83%"
-          left="calc(50% - 75px - -100px)"
+          top="45.83%"
+          bottom="50%"
+          left="calc(50% - 75px - 100px)"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider36943251")}
+          {...getOverrideProps(overrides, "Divider36743134")}
         ></Divider>
         <Text
           fontFamily="Inter"
@@ -166,26 +233,26 @@ export default function Signup(props) {
         <Divider
           width="150px"
           position="absolute"
-          top="50%"
-          bottom="45.83%"
-          left="calc(50% - 75px - 100px)"
+          top="45.83%"
+          bottom="50%"
+          left="calc(50% - 75px - -100px)"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider36943249")}
+          {...getOverrideProps(overrides, "Divider36743137")}
         ></Divider>
       </View>
       <View
         width="350px"
-        height="46px"
+        height="262px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 23px - -58px)"
-        left="calc(50% - 175px - 2px)"
+        top="calc(50% - 131px - 209px)"
+        left="calc(50% - 175px - 0px)"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "SignupButton")}
+        {...getOverrideProps(overrides, "LoginWithEmail")}
       >
         <View
           width="350px"
@@ -195,10 +262,10 @@ export default function Signup(props) {
           alignItems="unset"
           justifyContent="unset"
           position="absolute"
-          top="0px"
-          left="0px"
+          top="calc(50% - 23px - -108px)"
+          left="calc(50% - 175px - 0px)"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "SignUpButton")}
+          {...getOverrideProps(overrides, "LoginButton")}
         >
           <Button
             width="350px"
@@ -209,65 +276,10 @@ export default function Signup(props) {
             size="large"
             isDisabled={false}
             variation="primary"
-            children="SIGN UP"
-            {...getOverrideProps(overrides, "Button36943283")}
+            children="LOGIN"
+            {...getOverrideProps(overrides, "Button36743129")}
           ></Button>
         </View>
-      </View>
-      <View
-        width="348px"
-        height="42px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="calc(50% - 21px - 16px)"
-        left="calc(50% - 174px - 1px)"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Terms")}
-      >
-        <Text
-          fontFamily="Inter"
-          fontSize="14px"
-          fontWeight="400"
-          color="rgba(13,26,38,1)"
-          lineHeight="21px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="0%"
-          bottom="0%"
-          left="0%"
-          right="0%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="By selecting Create Account below, I agree to Terms&#xA;of Service & Privacy Policy. "
-          {...getOverrideProps(
-            overrides,
-            "By selecting Create Account below, I agree to Terms of Service & Privacy Policy."
-          )}
-        ></Text>
-      </View>
-      <View
-        width="350px"
-        height="270px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="calc(50% - 135px - 205px)"
-        left="calc(50% - 175px - 0px)"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "SignUp")}
-      >
         <Flex
           gap="10px"
           direction="row"
@@ -276,90 +288,12 @@ export default function Signup(props) {
           justifyContent="center"
           alignItems="center"
           position="absolute"
-          top="calc(50% - 23px - -44px)"
+          top="calc(50% - 23px - -27px)"
           left="calc(50% - 175px - 1px)"
           border="1px SOLID rgba(0,0,0,1)"
           borderRadius="5px"
           padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "Input36943259")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(128,128,128,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Email"
-            {...getOverrideProps(overrides, "placeholder36943260")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="352px"
-          height="48px"
-          justifyContent="center"
-          alignItems="center"
-          position="absolute"
-          top="calc(50% - 23px - 23px)"
-          left="calc(50% - 175px - 1px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="5px"
-          padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "Input36943261")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(128,128,128,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Name"
-            {...getOverrideProps(overrides, "placeholder36943262")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="352px"
-          height="48px"
-          justifyContent="center"
-          alignItems="center"
-          position="absolute"
-          top="calc(50% - 23px - -111px)"
-          left="calc(50% - 175px - 1px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="5px"
-          padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "Input36943280")}
+          {...getOverrideProps(overrides, "Input36892715")}
         >
           <Text
             fontFamily="Inter"
@@ -382,7 +316,46 @@ export default function Signup(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Password"
-            {...getOverrideProps(overrides, "placeholder36943281")}
+            {...getOverrideProps(overrides, "placeholder36892716")}
+          ></Text>
+        </Flex>
+        <Flex
+          gap="10px"
+          direction="row"
+          width="352px"
+          height="48px"
+          justifyContent="center"
+          alignItems="center"
+          position="absolute"
+          top="calc(50% - 23px - 40px)"
+          left="calc(50% - 175px - 1px)"
+          border="1px SOLID rgba(0,0,0,1)"
+          borderRadius="5px"
+          padding="0px 0px 0px 16px"
+          {...getOverrideProps(overrides, "Input36892708")}
+        >
+          <Text
+            fontFamily="Inter"
+            fontSize="16px"
+            fontWeight="400"
+            color="rgba(128,128,128,1)"
+            lineHeight="24px"
+            textAlign="left"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            width="unset"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            grow="1"
+            shrink="1"
+            basis="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="Email"
+            {...getOverrideProps(overrides, "placeholder36892709")}
           ></Text>
         </Flex>
         <Text
@@ -395,21 +368,21 @@ export default function Signup(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="350px"
+          width="332px"
           height="unset"
           gap="unset"
           alignItems="unset"
           position="absolute"
-          top="11.11%"
-          bottom="73.33%"
+          top="11.45%"
+          bottom="80.53%"
           left="0%"
-          right="0%"
+          right="5.14%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Looks like you don’t have an account. Let’s create a new one for you."
+          children="Please sign in to connect with your circle."
           {...getOverrideProps(
             overrides,
-            "Looks like you don\u2019t have an account. Let\u2019s create a new one for you."
+            "Please sign in to connect with your circle."
           )}
         ></Text>
         <Text
@@ -428,18 +401,18 @@ export default function Signup(props) {
           alignItems="unset"
           position="absolute"
           top="0%"
-          bottom="88.89%"
+          bottom="88.55%"
           left="0%"
-          right="76.57%"
+          right="78.86%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="SIGN UP"
-          {...getOverrideProps(overrides, "SIGN UP")}
+          children="SIGN IN"
+          {...getOverrideProps(overrides, "SIGN IN")}
         ></Text>
       </View>
       <View
         padding="0px 0px 0px 0px"
-        width="84px"
+        width="78px"
         height="24px"
         display="block"
         gap="unset"
@@ -448,7 +421,7 @@ export default function Signup(props) {
         position="absolute"
         top="43px"
         left="40px"
-        {...getOverrideProps(overrides, "BackToSignin")}
+        {...getOverrideProps(overrides, "BackToHome")}
       >
         <View
           width="24px"
@@ -505,8 +478,8 @@ export default function Signup(props) {
           left="33px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Sign in"
-          {...getOverrideProps(overrides, "Sign in")}
+          children="Home"
+          {...getOverrideProps(overrides, "Home")}
         ></Text>
       </View>
       <Image

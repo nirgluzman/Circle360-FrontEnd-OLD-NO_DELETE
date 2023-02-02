@@ -14,9 +14,8 @@ export declare type DashboardHeaderOverridesProps = {
     Join?: PrimitiveOverrideProps<ButtonProps>;
     CreateNewButton?: PrimitiveOverrideProps<ViewProps>;
     CreateNew?: PrimitiveOverrideProps<ButtonProps>;
-    TitleIcon?: PrimitiveOverrideProps<ViewProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
     "My Circles"?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type DashboardHeaderProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: DashboardHeaderOverridesProps | undefined | null;

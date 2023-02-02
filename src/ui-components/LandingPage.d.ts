@@ -10,11 +10,11 @@ import { ButtonProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-r
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type LandingPageOverridesProps = {
     LandingPage?: PrimitiveOverrideProps<ViewProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+    GetStartedButton?: PrimitiveOverrideProps<ButtonProps>;
     Title?: PrimitiveOverrideProps<ViewProps>;
     "A new way to communicate with your friends"?: PrimitiveOverrideProps<TextProps>;
     "Circle 360"?: PrimitiveOverrideProps<TextProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
+    Logo?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type LandingPageProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: LandingPageOverridesProps | undefined | null;

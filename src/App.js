@@ -2,7 +2,6 @@ import "./App.css";
 
 import {
   LandingPage,
-  Login,
   Signup,
   DashboardHeader,
   DashboardCircle,
@@ -17,7 +16,7 @@ import {
 import logo from "./images/logo.png";
 
 const LandingPageOverrides = {
-  image: {
+  Logo: {
     src: logo,
   },
 };
@@ -26,8 +25,8 @@ function App() {
   return (
     <div className="App">
       <LandingPage overrides={LandingPageOverrides} />
-      <Login />
-      <Signup />
+
+      <Signup overrides={LandingPageOverrides} />
       <DashboardHeader />
       <DashboardCircle />
       <JoinCircle />

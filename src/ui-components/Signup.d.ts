@@ -20,8 +20,8 @@ export declare type SignupOverridesProps = {
     Divider36943251?: PrimitiveOverrideProps<DividerProps>;
     OR?: PrimitiveOverrideProps<TextProps>;
     Divider36943249?: PrimitiveOverrideProps<DividerProps>;
-    SignUpButton37242753?: PrimitiveOverrideProps<ViewProps>;
-    SignUpButton37242751?: PrimitiveOverrideProps<ViewProps>;
+    SignupButton?: PrimitiveOverrideProps<ViewProps>;
+    SignUpButton?: PrimitiveOverrideProps<ViewProps>;
     Button36943283?: PrimitiveOverrideProps<ButtonProps>;
     Terms?: PrimitiveOverrideProps<ViewProps>;
     "By selecting Create Account below, I agree to Terms of Service & Privacy Policy."?: PrimitiveOverrideProps<TextProps>;
@@ -34,12 +34,11 @@ export declare type SignupOverridesProps = {
     placeholder36943281?: PrimitiveOverrideProps<TextProps>;
     "Looks like you don\u2019t have an account. Let\u2019s create a new one for you."?: PrimitiveOverrideProps<TextProps>;
     "SIGN UP"?: PrimitiveOverrideProps<TextProps>;
-    BackToSignIn?: PrimitiveOverrideProps<ViewProps>;
-    image37132722?: PrimitiveOverrideProps<ImageProps>;
-    BackButton?: PrimitiveOverrideProps<ViewProps>;
+    BackToSignin?: PrimitiveOverrideProps<ViewProps>;
     MyIcon?: PrimitiveOverrideProps<ViewProps>;
     Vector?: PrimitiveOverrideProps<IconProps>;
     "Sign in"?: PrimitiveOverrideProps<TextProps>;
+    Logo?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type SignupProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: SignupOverridesProps | undefined | null;

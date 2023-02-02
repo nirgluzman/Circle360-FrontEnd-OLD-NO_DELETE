@@ -36,7 +36,7 @@ export default function SendInvite(props) {
         left="75px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        {...getOverrideProps(overrides, "QRCode")}
+        {...getOverrideProps(overrides, "QRCodeImage")}
       ></Image>
       <View
         width="293px"
@@ -231,106 +231,78 @@ export default function SendInvite(props) {
         ></Text>
       </View>
       <View
-        width="350px"
+        padding="0px 0px 0px 0px"
+        width="110px"
+        height="24px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="43px"
+        left="43px"
+        {...getOverrideProps(overrides, "BackToMyCircles")}
+      >
+        <Icon
+          width="18px"
+          height="15px"
+          viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
+          paths={[
+            {
+              d: "M7 4L7 0L0 7L7 14L7 9.9C12 9.9 15.5 11.5 18 15C17 10 14 5 7 4Z",
+              fill: "rgba(13,26,38,1)",
+              fillRule: "nonzero",
+            },
+          ]}
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="20.83%"
+          bottom="16.67%"
+          left="0%"
+          right="83.64%"
+          {...getOverrideProps(overrides, "BackIcon")}
+        ></Icon>
+        <Text
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="400"
+          color="rgba(13,26,38,1)"
+          lineHeight="24px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="0px"
+          left="30px"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="My Circles"
+          {...getOverrideProps(overrides, "My Circles")}
+        ></Text>
+      </View>
+      <Image
+        width="60px"
         height="60px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 30px - 411px)"
-        left="calc(50% - 175px - 0px)"
+        top="25px"
+        right="40px"
+        borderRadius="160px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "SendInviteHeader")}
-      >
-        <View
-          padding="0px 0px 0px 0px"
-          width="113px"
-          height="24px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="18px"
-          left="0px"
-          {...getOverrideProps(overrides, "BackButton")}
-        >
-          <View
-            width="24px"
-            height="24px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            position="absolute"
-            top="0px"
-            left="0px"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "MyIcon")}
-          >
-            <Icon
-              width="18px"
-              height="15px"
-              viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
-              paths={[
-                {
-                  d: "M7 4L7 0L0 7L7 14L7 9.9C12 9.9 15.5 11.5 18 15C17 10 14 5 7 4Z",
-                  fill: "rgba(13,26,38,1)",
-                  fillRule: "nonzero",
-                },
-              ]}
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="20.83%"
-              bottom="16.67%"
-              left="12.5%"
-              right="12.5%"
-              {...getOverrideProps(overrides, "Vector")}
-            ></Icon>
-          </View>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(13,26,38,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            position="absolute"
-            top="0px"
-            left="33px"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="My Circles"
-            {...getOverrideProps(overrides, "My Circles")}
-          ></Text>
-        </View>
-        <Image
-          width="60px"
-          height="60px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="0px"
-          right="0px"
-          borderRadius="160px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
-      </View>
+        objectFit="cover"
+        {...getOverrideProps(overrides, "ProfileImage")}
+      ></Image>
     </View>
   );
 }

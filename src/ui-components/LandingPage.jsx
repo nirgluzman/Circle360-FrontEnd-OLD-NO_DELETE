@@ -34,7 +34,7 @@ export default function LandingPage(props) {
         isDisabled={false}
         variation="primary"
         children="GET STARTED"
-        {...getOverrideProps(overrides, "Button")}
+        {...getOverrideProps(overrides, "GetStartedButton")}
       ></Button>
       <View
         width="316px"
@@ -113,7 +113,7 @@ export default function LandingPage(props) {
         left="calc(50% - 100px - 0px)"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        {...getOverrideProps(overrides, "image")}
+        {...getOverrideProps(overrides, "Logo")}
       ></Image>
     </View>
   );

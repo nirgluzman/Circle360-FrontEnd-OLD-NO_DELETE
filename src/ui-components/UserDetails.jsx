@@ -182,78 +182,6 @@ export default function UserDetails(props) {
           ></Text>
         </Flex>
       </View>
-      <View
-        padding="0px 0px 0px 0px"
-        width="82px"
-        height="24px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="43px"
-        left="40px"
-        {...getOverrideProps(overrides, "BackButton")}
-      >
-        <View
-          width="24px"
-          height="24px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="calc(50% - 12px - 0px)"
-          left="calc(50% - 12px - 29px)"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "MyIcon")}
-        >
-          <Icon
-            width="18px"
-            height="15px"
-            viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
-            paths={[
-              {
-                d: "M7 4L7 0L0 7L7 14L7 9.9C12 9.9 15.5 11.5 18 15C17 10 14 5 7 4Z",
-                fill: "rgba(13,26,38,1)",
-                fillRule: "nonzero",
-              },
-            ]}
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            position="absolute"
-            top="20.83%"
-            bottom="16.67%"
-            left="12.5%"
-            right="12.5%"
-            {...getOverrideProps(overrides, "Vector")}
-          ></Icon>
-        </View>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(13,26,38,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="calc(50% - 12px - 0px)"
-          left="calc(50% - 24.5px - -16.5px)"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Profile"
-          {...getOverrideProps(overrides, "Profile")}
-        ></Text>
-      </View>
       <Text
         fontFamily="Inter"
         fontSize="32px"
@@ -278,6 +206,64 @@ export default function UserDetails(props) {
         children="Profile Details"
         {...getOverrideProps(overrides, "Profile Details")}
       ></Text>
+      <View
+        padding="0px 0px 0px 0px"
+        width="79px"
+        height="24px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="43px"
+        left="43px"
+        {...getOverrideProps(overrides, "BackToUserSettings")}
+      >
+        <Icon
+          width="18px"
+          height="15px"
+          viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
+          paths={[
+            {
+              d: "M7 4L7 0L0 7L7 14L7 9.9C12 9.9 15.5 11.5 18 15C17 10 14 5 7 4Z",
+              fill: "rgba(13,26,38,1)",
+              fillRule: "nonzero",
+            },
+          ]}
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="20.83%"
+          bottom="16.67%"
+          left="0%"
+          right="77.22%"
+          {...getOverrideProps(overrides, "BackIcon")}
+        ></Icon>
+        <Text
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="400"
+          color="rgba(13,26,38,1)"
+          lineHeight="24px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="calc(50% - 12px - 0px)"
+          left="calc(50% - 24.5px - -15px)"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Profile"
+          {...getOverrideProps(overrides, "Profile")}
+        ></Text>
+      </View>
       <Image
         width="60px"
         height="60px"
@@ -291,7 +277,7 @@ export default function UserDetails(props) {
         borderRadius="160px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        {...getOverrideProps(overrides, "image")}
+        {...getOverrideProps(overrides, "ProfileImage")}
       ></Image>
     </View>
   );

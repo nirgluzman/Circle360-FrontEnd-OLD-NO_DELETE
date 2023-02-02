@@ -10,19 +10,17 @@ import { ButtonProps, FlexProps, IconProps, ImageProps, TextProps, ViewProps } f
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type JoinCircleOverridesProps = {
     JoinCircle?: PrimitiveOverrideProps<ViewProps>;
-    JoinInviteCodeButton?: PrimitiveOverrideProps<ViewProps>;
+    JoinButton?: PrimitiveOverrideProps<ViewProps>;
     Button?: PrimitiveOverrideProps<ButtonProps>;
     Input?: PrimitiveOverrideProps<FlexProps>;
     placeholder?: PrimitiveOverrideProps<TextProps>;
     JoinCircle37242759?: PrimitiveOverrideProps<ViewProps>;
     "If you have an invite code, please type it here:"?: PrimitiveOverrideProps<TextProps>;
     "Join Circle"?: PrimitiveOverrideProps<TextProps>;
-    Header?: PrimitiveOverrideProps<ViewProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
-    BackButton?: PrimitiveOverrideProps<ViewProps>;
-    MyIcon?: PrimitiveOverrideProps<ViewProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
+    BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
     "My Circles"?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type JoinCircleProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: JoinCircleOverridesProps | undefined | null;
