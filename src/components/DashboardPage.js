@@ -59,9 +59,10 @@ function Map() {
   return (
     <div>
       <GoogleMap
-        zoom={10}
         center={selected}
+        clickableIcons={false}
         mapContainerClassName="map-container"
+        zoom={10}
       >
         {selected && <Marker position={selected} />}
       </GoogleMap>
