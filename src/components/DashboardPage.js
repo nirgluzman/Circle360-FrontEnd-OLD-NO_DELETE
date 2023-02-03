@@ -1,10 +1,44 @@
+/* global google */
 import { useEffect, useState, useMemo } from "react";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import { View, Flex } from "@aws-amplify/ui-react";
+import logo from "../images/logo.png";
+import {
+  GoogleMap,
+  InfoWindow,
+  useLoadScript,
+  Marker,
+} from "@react-google-maps/api";
+import { Flex } from "@aws-amplify/ui-react";
+import { useNavigate } from "react-router-dom";
 
 import { DashboardHeader } from "../ui-components";
+import { DashboardCircle } from "../ui-components";
 
 export default function DashboardPage() {
+  const navigate = useNavigate();
+  const DashboardPageOverrides = {
+    ProfileImage: {
+      alt: "Circle360 logo",
+      src: logo,
+      onClick: () => navigate("/usersettings"),
+    },
+    ConfigIcon: {
+      className: "custom-btn",
+      onClick: () => navigate("/circleSettings"),
+    },
+    DeleteIcon: {
+      className: "custom-btn",
+      onClick: () => navigate("/"),
+    },
+    JoinButton: {
+      className: "custom-btn",
+      onClick: () => navigate("/joincircle"),
+    },
+    CreateNewButton: {
+      className: "custom-btn",
+      onClick: () => navigate("/sendinvite"),
+    },
+  };
+
   // useEffect(() => {
   //   Auth.currentSession()
   //     .then((data) => console.log(data))
@@ -21,16 +55,82 @@ export default function DashboardPage() {
 
   return (
     <Flex justifyContent="center" alignItems="center" direction="column">
-      <DashboardHeader />
+      <DashboardHeader overrides={DashboardPageOverrides} />
+      <DashboardCircle overrides={DashboardPageOverrides} />
+
       <Map />
     </Flex>
   );
 }
+let markers = [];
 
 function Map() {
   const center = useMemo(() => ({ lat: 48, lng: 11 }), []);
   const [selected, setSelected] = useState(center);
   const [status, setStatus] = useState(null);
+
+  const [activeMarker, setActiveMarker] = useState(null);
+
+  const handleActiveMarker = (marker) => {
+    if (marker === activeMarker) {
+      return;
+    }
+    setActiveMarker(marker);
+  };
+
+  const handleOnLoad = (map) => {
+    const size = new google.maps.Size(50, 50);
+    markers = [
+      {
+        id: 1,
+        name: "Campus, Berlin",
+        position: { lat: 52.45711, lng: 13.54023 },
+        image: {
+          url: "https://api.dicebear.com/5.x/bottts/svg?seed=1445.svg",
+          scaledSize: size, // scaled size
+        },
+      },
+      {
+        id: 2,
+        name: "Berlin",
+        position: { lat: 51.88184, lng: 11.62319 },
+        image: {
+          url: "https://api.dicebear.com/5.x/bottts/svg?seed=142.svg",
+          scaledSize: size, // scaled size
+        },
+      },
+      {
+        id: 3,
+        name: "Berlin",
+        position: { lat: 50.88184, lng: 10.62319 },
+        image: {
+          url: "https://api.dicebear.com/5.x/bottts/svg?seed=145.svg",
+          scaledSize: size, // scaled size
+        },
+      },
+      {
+        id: 4,
+        name: "New York, New York",
+        position: { lat: 50.84184, lng: 11.52319 },
+        image: {
+          url: "https://api.dicebear.com/5.x/bottts/svg?seed=147.svg",
+          scaledSize: size, // scaled size
+        },
+      },
+      {
+        id: 5,
+        name: "Berlin",
+        position: { lat: 40.712777, lng: -74.005954 },
+        image: {
+          url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+          scaledSize: size, // scaled size
+        },
+      },
+    ];
+    const bounds = new google.maps.LatLngBounds();
+    markers?.forEach(({ position }) => bounds.extend(position));
+    map.fitBounds(bounds);
+  };
 
   // Retrieve geolocation from browser
   useEffect(() => {
@@ -60,11 +160,26 @@ function Map() {
     <div>
       <GoogleMap
         center={selected}
+        onLoad={handleOnLoad}
         clickableIcons={false}
         mapContainerClassName="map-container"
         zoom={10}
       >
         {selected && <Marker position={selected} />}
+        {markers.map(({ id, name, position, image }) => (
+          <Marker
+            key={id}
+            position={position}
+            icon={image}
+            onClick={() => handleActiveMarker(id)}
+          >
+            {activeMarker === id ? (
+              <InfoWindow onCloseClick={() => setActiveMarker(null)}>
+                <div>{name}</div>
+              </InfoWindow>
+            ) : null}
+          </Marker>
+        ))}
       </GoogleMap>
     </div>
   );

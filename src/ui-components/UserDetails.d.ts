@@ -6,20 +6,19 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { IconProps, ImageProps, TextFieldProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type UserDetailsOverridesProps = {
     UserDetails?: PrimitiveOverrideProps<ViewProps>;
     "Your email address cannot be changed."?: PrimitiveOverrideProps<TextProps>;
-    Email?: PrimitiveOverrideProps<FlexProps>;
-    EmailPlaceholder?: PrimitiveOverrideProps<TextProps>;
-    UserNameInput?: PrimitiveOverrideProps<FlexProps>;
-    UserNamePlaceholder?: PrimitiveOverrideProps<TextProps>;
     Title?: PrimitiveOverrideProps<TextProps>;
     BackToUserSettings?: PrimitiveOverrideProps<ViewProps>;
     BackIcon?: PrimitiveOverrideProps<IconProps>;
     Text?: PrimitiveOverrideProps<TextProps>;
     ProfileImage?: PrimitiveOverrideProps<ImageProps>;
+    Rename?: PrimitiveOverrideProps<ViewProps>;
+    EmailTextField?: PrimitiveOverrideProps<TextFieldProps>;
+    NickNameField?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type UserDetailsProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: UserDetailsOverridesProps | undefined | null;

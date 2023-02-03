@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import { Icon, Image, Text, TextField, View } from "@aws-amplify/ui-react";
 export default function UserDetails(props) {
   const { overrides, ...rest } = props;
   return (
@@ -51,84 +51,6 @@ export default function UserDetails(props) {
           "Your email address cannot be changed."
         )}
       ></Text>
-      <Flex
-        gap="10px"
-        direction="row"
-        width="352px"
-        height="48px"
-        justifyContent="center"
-        alignItems="center"
-        position="absolute"
-        top="calc(50% - 23px - 168px)"
-        left="calc(50% - 175px - 1px)"
-        border="1px SOLID rgba(0,0,0,1)"
-        borderRadius="5px"
-        padding="0px 0px 0px 16px"
-        {...getOverrideProps(overrides, "Email")}
-      >
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(128,128,128,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          grow="1"
-          shrink="1"
-          basis="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Email"
-          {...getOverrideProps(overrides, "EmailPlaceholder")}
-        ></Text>
-      </Flex>
-      <Flex
-        gap="10px"
-        direction="row"
-        width="352px"
-        height="48px"
-        justifyContent="center"
-        alignItems="center"
-        position="absolute"
-        top="calc(50% - 23px - 239px)"
-        left="calc(50% - 175px - 1px)"
-        border="1px SOLID rgba(0,0,0,1)"
-        borderRadius="5px"
-        padding="0px 0px 0px 16px"
-        {...getOverrideProps(overrides, "UserNameInput")}
-      >
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(128,128,128,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          grow="1"
-          shrink="1"
-          basis="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Nickname"
-          {...getOverrideProps(overrides, "UserNamePlaceholder")}
-        ></Text>
-      </Flex>
       <Text
         fontFamily="Inter"
         fontSize="32px"
@@ -226,6 +148,44 @@ export default function UserDetails(props) {
         objectFit="cover"
         {...getOverrideProps(overrides, "ProfileImage")}
       ></Image>
+      <View
+        width="330px"
+        height="109px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="calc(50% - 54.5px - 218.5px)"
+        left="calc(50% - 165px - 0px)"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Rename")}
+      >
+        <TextField
+          placeholder="Email"
+          height="42px"
+          position="absolute"
+          top="67px"
+          left="0px"
+          size="default"
+          isDisabled={true}
+          labelHidden={true}
+          variation="default"
+          {...getOverrideProps(overrides, "EmailTextField")}
+        ></TextField>
+        <TextField
+          placeholder="Nickname"
+          height="41px"
+          position="absolute"
+          top="0px"
+          left="0px"
+          size="default"
+          isDisabled={false}
+          labelHidden={true}
+          variation="default"
+          {...getOverrideProps(overrides, "NickNameField")}
+        ></TextField>
+      </View>
     </View>
   );
 }

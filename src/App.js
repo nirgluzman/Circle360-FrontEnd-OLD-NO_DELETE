@@ -5,6 +5,12 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import AuthPage from "./components/AuthPage";
 import DashboardPage from "./components/DashboardPage";
+import JoinMyCircle from "./components/JoinMyCircle";
+import SendInvitation from "./components/SendInvitation";
+import CircleSettingsPage from "./components/CircleSettingsPage";
+import UserSettingsPage from "./components/UserSettingsPage";
+import UserDetailsPage from "./components/UserDetailsPage";
+import UserAppSettingsPage from "./components/UserAppSettingsPage";
 
 import { Auth, Hub } from "aws-amplify";
 
@@ -34,6 +40,12 @@ function App() {
         {/* <Route path="/" element={<HomePage />} />
         <Route path="/auth" element={<AuthPage />} /> */}
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/joincircle" element={<JoinMyCircle />} />
+        <Route path="/sendinvite" element={<SendInvitation />} />
+        <Route path="/circlesettings" element={<CircleSettingsPage />} />
+        <Route path="/usersettings" element={<UserSettingsPage />} />
+        <Route path="/userdetails" element={<UserDetailsPage />} />
+        <Route path="/userAppSettings" element={<UserAppSettingsPage />} />
       </Routes>
     </div>
   );

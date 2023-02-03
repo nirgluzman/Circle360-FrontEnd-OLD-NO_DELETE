@@ -6,15 +6,16 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ButtonProps, FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps, IconProps, ImageProps, TextFieldProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type JoinCircleOverridesProps = {
     JoinCircle?: PrimitiveOverrideProps<ViewProps>;
+    Event?: PrimitiveOverrideProps<ViewProps>;
     JoinButton?: PrimitiveOverrideProps<ButtonProps>;
-    CodeInput?: PrimitiveOverrideProps<FlexProps>;
-    CodePlaceholder?: PrimitiveOverrideProps<TextProps>;
+    JoinCircleField?: PrimitiveOverrideProps<TextFieldProps>;
+    Title38892769?: PrimitiveOverrideProps<ViewProps>;
     "If you have an invite code, please type it here:"?: PrimitiveOverrideProps<TextProps>;
-    Title?: PrimitiveOverrideProps<TextProps>;
+    Title36943866?: PrimitiveOverrideProps<TextProps>;
     BackToMyCircles?: PrimitiveOverrideProps<FlexProps>;
     BackIcon?: PrimitiveOverrideProps<IconProps>;
     Text?: PrimitiveOverrideProps<TextProps>;
