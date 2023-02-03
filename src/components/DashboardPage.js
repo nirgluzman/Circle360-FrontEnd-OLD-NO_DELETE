@@ -83,7 +83,8 @@ function Map() {
     markers = [
       {
         id: 1,
-        name: "Campus, Berlin",
+        nickname: "Payal",
+        email: "payal@gmail.com",
         position: { lat: 52.45711, lng: 13.54023 },
         image: {
           url: "https://api.dicebear.com/5.x/bottts/svg?seed=1445.svg",
@@ -92,7 +93,8 @@ function Map() {
       },
       {
         id: 2,
-        name: "Berlin",
+        nickname: "Nir",
+        email: "nir@gmail.com",
         position: { lat: 51.88184, lng: 11.62319 },
         image: {
           url: "https://api.dicebear.com/5.x/bottts/svg?seed=142.svg",
@@ -101,7 +103,8 @@ function Map() {
       },
       {
         id: 3,
-        name: "Berlin",
+        nickname: "Anna",
+        email: "anna@gmail.com",
         position: { lat: 50.88184, lng: 10.62319 },
         image: {
           url: "https://api.dicebear.com/5.x/bottts/svg?seed=145.svg",
@@ -110,7 +113,8 @@ function Map() {
       },
       {
         id: 4,
-        name: "New York, New York",
+        nickname: "Reagan",
+        email: "reagan@gmail.com",
         position: { lat: 50.84184, lng: 11.52319 },
         image: {
           url: "https://api.dicebear.com/5.x/bottts/svg?seed=147.svg",
@@ -119,7 +123,8 @@ function Map() {
       },
       {
         id: 5,
-        name: "Berlin",
+        nickname: "Ve",
+        email: "ve@gmail.com",
         position: { lat: 40.712777, lng: -74.005954 },
         image: {
           url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
@@ -166,7 +171,7 @@ function Map() {
         zoom={10}
       >
         {selected && <Marker position={selected} />}
-        {markers.map(({ id, name, position, image }) => (
+        {markers.map(({ id, nickname, email, position, image }) => (
           <Marker
             key={id}
             position={position}
@@ -175,7 +180,7 @@ function Map() {
           >
             {activeMarker === id ? (
               <InfoWindow onCloseClick={() => setActiveMarker(null)}>
-                <div>{name}</div>
+                <div>{nickname}</div>
               </InfoWindow>
             ) : null}
           </Marker>

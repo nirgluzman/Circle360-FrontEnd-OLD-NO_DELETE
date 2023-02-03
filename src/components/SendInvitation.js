@@ -4,6 +4,8 @@ import logo from "../images/logo.png";
 import { styles } from "../utils/amplifyStyles";
 import { Flex } from "@aws-amplify/ui-react";
 import { useNavigate } from "react-router-dom";
+import validator from "validator";
+import { Alert } from "@aws-amplify/ui-react";
 
 export default function SendInvitation() {
   const navigate = useNavigate();
@@ -12,7 +14,9 @@ export default function SendInvitation() {
   const SendInvitationOverrides = {
     EmailTextField: {
       type: "email",
-      onChange: (e) => setEmail(e.target.value),
+      onChange: (e) => {
+        setEmail(e.target.value);
+      },
     },
     ProfileImage: {
       alt: "Circle360 logo",
@@ -21,7 +25,14 @@ export default function SendInvitation() {
     },
     SendInviteButton: {
       className: "custom-btn",
-      onClick: () => alert("added"),
+      //onClick: () => alert("added"),
+      onClick: () => {
+        if (validator.isEmail(email)) {
+          console.log(email);
+        } else {
+          alert("Your email is not correct!");
+        }
+      },
     },
     BackIcon: {
       className: "custom-btn",
