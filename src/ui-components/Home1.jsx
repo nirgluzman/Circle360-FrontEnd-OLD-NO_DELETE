@@ -8,12 +8,12 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Image, Text, View } from "@aws-amplify/ui-react";
-export default function DashboardHeader(props) {
+export default function Home1(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="430px"
-      height="365px"
+      width="390px"
+      height="844px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -21,74 +21,81 @@ export default function DashboardHeader(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...getOverrideProps(overrides, "DashboardHeader")}
+      {...getOverrideProps(overrides, "Home1")}
       {...rest}
     >
       <Button
         width="350px"
         position="absolute"
         borderRadius="12px"
-        top="282px"
-        left="41px"
+        top="calc(50% - 23px - -353px)"
+        left="calc(50% - 175px - 0px)"
         size="large"
         isDisabled={false}
         variation="primary"
-        children="JOIN"
-        {...getOverrideProps(overrides, "JoinButton")}
-      ></Button>
-      <Button
-        width="350px"
-        position="absolute"
-        borderRadius="12px"
-        top="200px"
-        left="40px"
-        size="large"
-        isDisabled={false}
-        variation="primary"
-        children="CREATE NEW"
-        {...getOverrideProps(overrides, "CreateNewButton")}
+        children="GET STARTED"
+        {...getOverrideProps(overrides, "GetStartedButton")}
       ></Button>
       <Text
         fontFamily="Inter"
-        fontSize="32px"
+        fontSize="24px"
         fontWeight="500"
         color="rgba(13,26,38,1)"
-        lineHeight="48px"
+        lineHeight="36px"
         textAlign="center"
         display="block"
         direction="column"
         justifyContent="unset"
-        width="161px"
-        height="50px"
+        width="366px"
+        height="unset"
         gap="unset"
         alignItems="unset"
         position="absolute"
-        top="30.68%"
-        bottom="55.62%"
-        left="31.4%"
-        right="31.16%"
+        top="calc(50% - 36px - -48px)"
+        left="calc(50% - 183px - 0px)"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="My Circles"
-        {...getOverrideProps(overrides, "Title")}
+        children="A new way to communicate with your friends"
+        {...getOverrideProps(
+          overrides,
+          "A new way to communicate with your friends"
+        )}
       ></Text>
-      <Image
-        width="60px"
-        height="60px"
+      <Text
+        fontFamily="Inter"
+        fontSize="48px"
+        fontWeight="500"
+        color="rgba(13,26,38,1)"
+        lineHeight="72px"
+        textAlign="center"
         display="block"
         direction="column"
         justifyContent="unset"
-        width="161px"
-        height="44px"
+        width="unset"
+        height="unset"
         gap="unset"
         alignItems="unset"
         position="absolute"
-        top="25px"
-        right="40px"
-        borderRadius="160px"
+        top="calc(50% - 36px - 89px)"
+        left="calc(50% - 119px - 0px)"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Circle 360"
+        {...getOverrideProps(overrides, "Title")}
+      ></Text>
+      <Image
+        width="210px"
+        height="210px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="calc(50% - 105px - 296px)"
+        left="calc(50% - 105px - 0px)"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        {...getOverrideProps(overrides, "ProfileImage")}
+        {...getOverrideProps(overrides, "Logo")}
       ></Image>
     </View>
   );

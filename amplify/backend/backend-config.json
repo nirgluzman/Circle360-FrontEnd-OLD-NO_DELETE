@@ -17,11 +17,15 @@
           ],
           "passwordPolicyMinLength": 8
         },
+<<<<<<< HEAD
         "signupAttributes": [
           "EMAIL",
           "GIVEN_NAME",
           "FAMILY_NAME"
         ],
+=======
+        "signupAttributes": [],
+>>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
         "socialProviders": [
           "GOOGLE"
         ],

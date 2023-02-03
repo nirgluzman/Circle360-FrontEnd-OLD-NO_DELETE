@@ -24,97 +24,69 @@ export default function CircleSettingsHeader(props) {
       {...getOverrideProps(overrides, "CircleSettingsHeader")}
       {...rest}
     >
-      <View
+      <Button
         width="350px"
-        height="46px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
         position="absolute"
+        borderRadius="12px"
         top="239px"
-        left="41px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "SendInviteButton")}
-      >
-        <Button
-          width="350px"
-          position="absolute"
-          borderRadius="12px"
-          top="0px"
-          left="0px"
-          size="large"
-          isDisabled={false}
-          variation="primary"
-          children="SEND INVITE"
-          {...getOverrideProps(overrides, "Button")}
-        ></Button>
-      </View>
-      <View
-        width="273px"
-        height="44px"
+        left="40px"
+        size="large"
+        isDisabled={false}
+        variation="primary"
+        children="INVITE NEW MEMBER"
+        {...getOverrideProps(overrides, "InviteNewMemberButton")}
+      ></Button>
+      <Icon
+        width="18px"
+        height="18px"
+        viewBox={{
+          minX: 0,
+          minY: 0,
+          width: 18.00244140625,
+          height: 18.00244140625,
+        }}
+        paths={[
+          {
+            d: "M0 14.2524L0 18.0024L3.75 18.0024L14.81 6.94244L11.06 3.19244L0 14.2524ZM17.71 2.63244L15.37 0.292444C15.2775 0.19974 15.1676 0.126193 15.0466 0.0760114C14.9257 0.02583 14.796 4.44089e-16 14.665 0C14.534 0 14.4043 0.02583 14.2834 0.0760114C14.1624 0.126193 14.0525 0.19974 13.96 0.292444L12.13 2.12244L15.88 5.87244L17.71 4.04244C17.8027 3.94993 17.8762 3.84004 17.9264 3.71907C17.9766 3.59809 18.0024 3.46841 18.0024 3.33744C18.0024 3.20648 17.9766 3.07679 17.9264 2.95582C17.8762 2.83485 17.8027 2.72496 17.71 2.63244L17.71 2.63244Z",
+            fill: "rgba(0,0,0,1)",
+            fillRule: "nonzero",
+          },
+        ]}
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="112px"
-        left="40px"
+        top="38.82%"
+        bottom="55.59%"
+        left="67.91%"
+        right="27.91%"
+        {...getOverrideProps(overrides, "EditIcon")}
+      ></Icon>
+      <Text
+        fontFamily="Inter"
+        fontSize="32px"
+        fontWeight="500"
+        color="rgba(13,26,38,1)"
+        lineHeight="48px"
+        textAlign="right"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="239px"
+        height="44px"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="34.78%"
+        bottom="51.55%"
+        left="9.3%"
+        right="35.12%"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Group")}
-      >
-        <Icon
-          width="18px"
-          height="18px"
-          viewBox={{
-            minX: 0,
-            minY: 0,
-            width: 18.00244140625,
-            height: 18.00244140625,
-          }}
-          paths={[
-            {
-              d: "M0 14.2524L0 18.0024L3.75 18.0024L14.81 6.94244L11.06 3.19244L0 14.2524ZM17.71 2.63244L15.37 0.292444C15.2775 0.19974 15.1676 0.126193 15.0466 0.0760114C14.9257 0.02583 14.796 4.44089e-16 14.665 0C14.534 0 14.4043 0.02583 14.2834 0.0760114C14.1624 0.126193 14.0525 0.19974 13.96 0.292444L12.13 2.12244L15.88 5.87244L17.71 4.04244C17.8027 3.94993 17.8762 3.84004 17.9264 3.71907C17.9766 3.59809 18.0024 3.46841 18.0024 3.33744C18.0024 3.20648 17.9766 3.07679 17.9264 2.95582C17.8762 2.83485 17.8027 2.72496 17.71 2.63244L17.71 2.63244Z",
-              fill: "rgba(0,0,0,1)",
-              fillRule: "nonzero",
-            },
-          ]}
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="29.54%"
-          bottom="29.55%"
-          left="92.31%"
-          right="1.1%"
-          {...getOverrideProps(overrides, "EditIcon")}
-        ></Icon>
-        <Text
-          fontFamily="Inter"
-          fontSize="32px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="48px"
-          textAlign="right"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="239px"
-          height="44px"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="0%"
-          bottom="0%"
-          left="0%"
-          right="12.45%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Group"
-          {...getOverrideProps(overrides, "GroupName")}
-        ></Text>
-      </View>
+        whiteSpace="pre-wrap"
+        children="Group"
+        {...getOverrideProps(overrides, "GroupName")}
+      ></Text>
       <View
         padding="0px 0px 0px 0px"
         width="110px"
@@ -170,7 +142,7 @@ export default function CircleSettingsHeader(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="My Circles"
-          {...getOverrideProps(overrides, "My Circles")}
+          {...getOverrideProps(overrides, "Text")}
         ></Text>
       </View>
       <Image

@@ -7,7 +7,15 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import {
+  Button,
+  Flex,
+  Icon,
+  Image,
+  Text,
+  TextField,
+  View,
+} from "@aws-amplify/ui-react";
 export default function JoinCircle(props) {
   const { overrides, ...rest } = props;
   return (
@@ -26,71 +34,45 @@ export default function JoinCircle(props) {
     >
       <View
         width="350px"
-        height="127px"
+        height="121px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 63.5px - 163.5px)"
-        left="calc(50% - 175px - 0px)"
+        top="245px"
+        left="40px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "JoinButton")}
+        {...getOverrideProps(overrides, "Event")}
       >
         <Button
           width="350px"
           position="absolute"
           borderRadius="12px"
-          top="81px"
+          top="75px"
           left="0px"
           size="large"
           isDisabled={false}
           variation="primary"
           children="JOIN"
-          {...getOverrideProps(overrides, "Button")}
+          {...getOverrideProps(overrides, "JoinButton")}
         ></Button>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="352px"
-          height="48px"
-          justifyContent="center"
-          alignItems="center"
+        <TextField
+          placeholder="Invite Code"
+          width="299px"
+          height="42px"
           position="absolute"
-          top="calc(50% - 23px - 41.5px)"
-          left="calc(50% - 175px - 1px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="5px"
-          padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "Input")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(128,128,128,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Invite code "
-            {...getOverrideProps(overrides, "placeholder")}
-          ></Text>
-        </Flex>
+          top="calc(50% - 21px - 39.5px)"
+          left="calc(50% - 149.5px - -0.5px)"
+          size="default"
+          isDisabled={false}
+          labelHidden={true}
+          variation="default"
+          {...getOverrideProps(overrides, "JoinCircleField")}
+        ></TextField>
       </View>
       <View
-        width="303px"
+        width="350px"
         height="100px"
         display="block"
         gap="unset"
@@ -98,9 +80,9 @@ export default function JoinCircle(props) {
         justifyContent="unset"
         position="absolute"
         top="calc(50% - 50px - 304px)"
-        left="calc(50% - 151.5px - 20.5px)"
+        left="calc(50% - 175px - 0px)"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "JoinCircle37242759")}
+        {...getOverrideProps(overrides, "Title38892769")}
       >
         <Text
           fontFamily="Inter"
@@ -112,7 +94,7 @@ export default function JoinCircle(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
+          width="350px"
           height="unset"
           gap="unset"
           alignItems="unset"
@@ -146,25 +128,25 @@ export default function JoinCircle(props) {
           position="absolute"
           top="0%"
           bottom="56%"
-          left="30.36%"
-          right="16.5%"
+          left="27.14%"
+          right="26.86%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Join Circle"
-          {...getOverrideProps(overrides, "Join Circle")}
+          {...getOverrideProps(overrides, "Title36943866")}
         ></Text>
       </View>
-      <View
-        padding="0px 0px 0px 0px"
-        width="110px"
-        height="24px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
+      <Flex
+        gap="12px"
+        direction="row"
+        width="unset"
+        height="unset"
+        justifyContent="flex-start"
+        alignItems="center"
         position="absolute"
         top="43px"
         left="43px"
+        padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "BackToMyCircles")}
       >
         <Icon
@@ -182,11 +164,8 @@ export default function JoinCircle(props) {
           gap="unset"
           alignItems="unset"
           justifyContent="unset"
-          position="absolute"
-          top="20.83%"
-          bottom="16.67%"
-          left="0%"
-          right="83.64%"
+          shrink="0"
+          position="relative"
           {...getOverrideProps(overrides, "BackIcon")}
         ></Icon>
         <Text
@@ -203,15 +182,14 @@ export default function JoinCircle(props) {
           height="unset"
           gap="unset"
           alignItems="unset"
-          position="absolute"
-          top="0px"
-          left="30px"
+          shrink="0"
+          position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="My Circles"
-          {...getOverrideProps(overrides, "My Circles")}
+          {...getOverrideProps(overrides, "Text")}
         ></Text>
-      </View>
+      </Flex>
       <Image
         width="60px"
         height="60px"

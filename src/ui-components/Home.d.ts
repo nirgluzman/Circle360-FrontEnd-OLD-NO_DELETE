@@ -14,18 +14,16 @@ import {
 } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> &
   React.DOMAttributes<HTMLDivElement>;
-export declare type DashboardHeaderOverridesProps = {
-  DashboardHeader?: PrimitiveOverrideProps<ViewProps>;
-  JoinButton?: PrimitiveOverrideProps<ButtonProps>;
-  CreateNewButton?: PrimitiveOverrideProps<ButtonProps>;
+export declare type HomeOverridesProps = {
+  Home?: PrimitiveOverrideProps<ViewProps>;
+  GetStartedButton?: PrimitiveOverrideProps<ButtonProps>;
+  "A new way to communicate with your friends"?: PrimitiveOverrideProps<TextProps>;
   Title?: PrimitiveOverrideProps<TextProps>;
-  ProfileImage?: PrimitiveOverrideProps<ImageProps>;
+  Logo?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
-export declare type DashboardHeaderProps = React.PropsWithChildren<
+export declare type HomeProps = React.PropsWithChildren<
   Partial<ViewProps> & {
-    overrides?: DashboardHeaderOverridesProps | undefined | null;
+    overrides?: HomeOverridesProps | undefined | null;
   }
 >;
-export default function DashboardHeader(
-  props: DashboardHeaderProps
-): React.ReactElement;
+export default function Home(props: HomeProps): React.ReactElement;

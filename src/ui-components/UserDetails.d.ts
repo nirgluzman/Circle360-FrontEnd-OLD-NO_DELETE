@@ -6,12 +6,12 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { IconProps, ImageProps, TextFieldProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type UserDetailsOverridesProps = {
     UserDetails?: PrimitiveOverrideProps<ViewProps>;
-    FormField?: PrimitiveOverrideProps<ViewProps>;
     "Your email address cannot be changed."?: PrimitiveOverrideProps<TextProps>;
+<<<<<<< HEAD
     Email?: PrimitiveOverrideProps<FlexProps>;
     placeholder37133074?: PrimitiveOverrideProps<TextProps>;
     LastName?: PrimitiveOverrideProps<FlexProps>;
@@ -23,6 +23,16 @@ export declare type UserDetailsOverridesProps = {
     BackIcon?: PrimitiveOverrideProps<IconProps>;
     Profile?: PrimitiveOverrideProps<TextProps>;
     ProfileImage?: PrimitiveOverrideProps<ImageProps>;
+=======
+    Title?: PrimitiveOverrideProps<TextProps>;
+    BackToUserSettings?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
+    Text?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
+    Rename?: PrimitiveOverrideProps<ViewProps>;
+    EmailTextField?: PrimitiveOverrideProps<TextFieldProps>;
+    NickNameField?: PrimitiveOverrideProps<TextFieldProps>;
+>>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
 } & EscapeHatchProps;
 export declare type UserDetailsProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: UserDetailsOverridesProps | undefined | null;

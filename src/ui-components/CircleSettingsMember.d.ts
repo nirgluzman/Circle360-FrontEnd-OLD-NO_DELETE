@@ -13,7 +13,7 @@ export declare type CircleSettingsMemberOverridesProps = {
     Member?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 1164"?: PrimitiveOverrideProps<ViewProps>;
     DeleteMemberIcon?: PrimitiveOverrideProps<ViewProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
+    DeleteIcon?: PrimitiveOverrideProps<IconProps>;
     MemberName?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type CircleSettingsMemberProps = React.PropsWithChildren<Partial<ViewProps> & {

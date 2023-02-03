@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import { Icon, Image, Text, TextField, View } from "@aws-amplify/ui-react";
 export default function UserDetails(props) {
   const { overrides, ...rest } = props;
   return (
@@ -24,17 +24,27 @@ export default function UserDetails(props) {
       {...getOverrideProps(overrides, "UserDetails")}
       {...rest}
     >
-      <View
-        width="351px"
-        height="209px"
+      <Text
+        fontFamily="Inter"
+        fontSize="14px"
+        fontWeight="400"
+        color="rgba(13,26,38,1)"
+        lineHeight="21px"
+        textAlign="left"
         display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
         gap="unset"
         alignItems="unset"
-        justifyContent="unset"
         position="absolute"
-        top="205px"
-        left="37px"
+        top="35.09%"
+        bottom="62.66%"
+        left="8.84%"
+        right="30.23%"
         padding="0px 0px 0px 0px"
+<<<<<<< HEAD
         {...getOverrideProps(overrides, "FormField")}
       >
         <Text
@@ -182,6 +192,15 @@ export default function UserDetails(props) {
           ></Text>
         </Flex>
       </View>
+=======
+        whiteSpace="pre-wrap"
+        children="Your email address cannot be changed."
+        {...getOverrideProps(
+          overrides,
+          "Your email address cannot be changed."
+        )}
+      ></Text>
+>>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
       <Text
         fontFamily="Inter"
         fontSize="32px"
@@ -199,12 +218,12 @@ export default function UserDetails(props) {
         position="absolute"
         top="12.02%"
         bottom="83.26%"
-        left="10%"
-        right="10%"
+        left="9.53%"
+        right="10.47%"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Profile Details"
-        {...getOverrideProps(overrides, "Profile Details")}
+        {...getOverrideProps(overrides, "Title")}
       ></Text>
       <View
         padding="0px 0px 0px 0px"
@@ -261,7 +280,11 @@ export default function UserDetails(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Profile"
+<<<<<<< HEAD
           {...getOverrideProps(overrides, "Profile")}
+=======
+          {...getOverrideProps(overrides, "Text")}
+>>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
         ></Text>
       </View>
       <Image
@@ -279,6 +302,44 @@ export default function UserDetails(props) {
         objectFit="cover"
         {...getOverrideProps(overrides, "ProfileImage")}
       ></Image>
+      <View
+        width="330px"
+        height="109px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="calc(50% - 54.5px - 218.5px)"
+        left="calc(50% - 165px - 0px)"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Rename")}
+      >
+        <TextField
+          placeholder="Email"
+          height="42px"
+          position="absolute"
+          top="67px"
+          left="0px"
+          size="default"
+          isDisabled={true}
+          labelHidden={true}
+          variation="default"
+          {...getOverrideProps(overrides, "EmailTextField")}
+        ></TextField>
+        <TextField
+          placeholder="Nickname"
+          height="41px"
+          position="absolute"
+          top="0px"
+          left="0px"
+          size="default"
+          isDisabled={false}
+          labelHidden={true}
+          variation="default"
+          {...getOverrideProps(overrides, "NickNameField")}
+        ></TextField>
+      </View>
     </View>
   );
 }
