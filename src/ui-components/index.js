@@ -16,6 +16,7 @@ export { default as NavBar } from "./NavBar";
 export { default as HeroLayout1 } from "./HeroLayout1";
 export { default as HeroLayout3 } from "./HeroLayout3";
 export { default as UserDetails } from "./UserDetails";
+export { default as DashboardMap } from "./DashboardMap";
 export { default as UserSettings } from "./UserSettings";
 export { default as EditProfile } from "./EditProfile";
 export { default as FormCheckout } from "./FormCheckout";

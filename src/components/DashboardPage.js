@@ -1,3 +1,4 @@
+/* global google */
 import { useEffect, useState, useMemo } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { View, Flex } from "@aws-amplify/ui-react";
@@ -31,6 +32,7 @@ function Map() {
   const center = useMemo(() => ({ lat: 48, lng: 11 }), []);
   const [selected, setSelected] = useState(center);
   const [status, setStatus] = useState(null);
+  const icon = "https://api.dicebear.com/5.x/bottts/svg?seed=1.svg";
 
   // Retrieve geolocation from browser
   useEffect(() => {
@@ -64,7 +66,7 @@ function Map() {
         mapContainerClassName="map-container"
         zoom={10}
       >
-        {selected && <Marker position={selected} />}
+        {selected && <Marker position={selected} icon={icon} />}
       </GoogleMap>
     </div>
   );
