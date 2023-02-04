@@ -7,6 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 function CircleSettingsPage() {
   const navigate = useNavigate();
+  const myCircleMembers = [
+    { _id: 1, nickName: "Nir", ProfileImage: "", admin: false },
+    { _id: 2, nickName: "Payal", ProfileImage: "", admin: false },
+    { _id: 3, nickName: "Anna", ProfileImage: "", admin: true },
+  ];
 
   const CircleSettingsOverrides = {
     ProfileImage: {
@@ -27,10 +32,10 @@ function CircleSettingsPage() {
       className: "custom-btn",
       onClick: () => navigate("/sendinvite"),
     },
-    /*DeleteIcon: {
-        className: "custom-btn",
-    //    onClick: () => {},
-      }*/
+    DeleteIcon: {
+      className: "custom-btn",
+      onClick: () => alert("Deleted"),
+    },
   };
   return (
     <div>
@@ -39,7 +44,17 @@ function CircleSettingsPage() {
           style={styles.center}
           overrides={CircleSettingsOverrides}
         />
-        <CircleSettingsMember />
+        {myCircleMembers?.map((item, key) => (
+          <div key={item.id}>
+            <CircleSettingsMember
+              key={item.id}
+              overrides={
+                (CircleSettingsOverrides,
+                { MemberName: { children: item.nickName } })
+              }
+            />
+          </div>
+        ))}
       </Flex>
     </div>
   );

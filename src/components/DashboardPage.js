@@ -18,12 +18,13 @@ export default function DashboardPage() {
 
   const myCircles = [
     {
-      name: "Family",
+      _id: 1,
+      groupName: "Family",
     },
-    { name: "Friends" },
-    { name: "Parents" },
-    { name: "Collegues" },
-    { name: "Other" },
+    { _id: 2, groupName: "Friends" },
+    { _id: 3, groupName: "Parents" },
+    { _id: 4, groupName: "Collegues" },
+    { _id: 5, groupName: "Other" },
   ];
   const DashboardPageOverrides = {
     ProfileImage: {
@@ -68,13 +69,15 @@ export default function DashboardPage() {
     <Flex justifyContent="center" alignItems="center" direction="column">
       <DashboardHeader overrides={DashboardPageOverrides} />
       {myCircles?.map((item) => (
-        <>
+        <div key={item._id}>
           <DashboardCircle
+            key={item._id}
             overrides={
-              ({ CircleName: { children: item.name } }, DashboardPageOverrides)
+              (DashboardPageOverrides,
+              { CircleName: { children: item.groupName } })
             }
           />
-        </>
+        </div>
       ))}
 
       <Map />
