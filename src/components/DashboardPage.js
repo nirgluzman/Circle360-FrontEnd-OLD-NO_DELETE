@@ -70,9 +70,7 @@ export default function DashboardPage() {
       {myCircles?.map((item) => (
         <>
           <DashboardCircle
-            overrides={
-              ({ CircleName: { children: item.name } }, DashboardPageOverrides)
-            }
+            overrides={{ CircleName: { children: item.name } }}
           />
         </>
       ))}
