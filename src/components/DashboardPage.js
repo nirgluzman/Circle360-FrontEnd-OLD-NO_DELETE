@@ -7,14 +7,26 @@ import {
   useLoadScript,
   Marker,
 } from "@react-google-maps/api";
-import { Flex } from "@aws-amplify/ui-react";
+import { Flex, Collection, Card } from "@aws-amplify/ui-react";
 import { useNavigate } from "react-router-dom";
 
-import { DashboardHeader } from "../ui-components";
-import { DashboardCircle } from "../ui-components";
+import {
+  DashboardHeader,
+  DashboardCircle,
+  DashboardCircleCollection,
+} from "../ui-components";
 
 export default function DashboardPage() {
   const navigate = useNavigate();
+  const myCircles = [
+    {
+      name: "Family",
+    },
+    { name: "Friends" },
+    { name: "Parents" },
+    { name: "Collegues" },
+    { name: "Other" },
+  ];
   const DashboardPageOverrides = {
     ProfileImage: {
       alt: "Circle360 logo",
@@ -25,6 +37,7 @@ export default function DashboardPage() {
       className: "custom-btn",
       onClick: () => navigate("/circleSettings"),
     },
+    CircleName: {},
     DeleteIcon: {
       className: "custom-btn",
       onClick: () => navigate("/"),
@@ -56,8 +69,30 @@ export default function DashboardPage() {
   return (
     <Flex justifyContent="center" alignItems="center" direction="column">
       <DashboardHeader overrides={DashboardPageOverrides} />
-      <DashboardCircle overrides={DashboardPageOverrides} />
 
+      <Collection
+        items={myCircles}
+        /*overrideItems={({ item }) => ({
+          circles: (
+            <div>
+              {item.myCircles.map((myCircle) => (
+                <>
+                  {myCircle.content}
+                  {/* <DashboardCircle overrides={DashboardPageOverrides} /> }
+                </>
+              ))}
+            </div>
+          ),
+        })}*/
+      >
+        {(item, index) => (
+          <Flex>
+            {item.name?.map((name) => (
+              <div key={index}>{name}</div>
+            ))}
+          </Flex>
+        )}
+      </Collection>
       <Map />
     </Flex>
   );
@@ -68,7 +103,6 @@ function Map() {
   const center = useMemo(() => ({ lat: 48, lng: 11 }), []);
   const [selected, setSelected] = useState(center);
   const [status, setStatus] = useState(null);
-
   const [activeMarker, setActiveMarker] = useState(null);
 
   const handleActiveMarker = (marker) => {

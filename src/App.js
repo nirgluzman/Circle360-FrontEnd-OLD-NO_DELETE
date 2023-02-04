@@ -6,7 +6,7 @@ import HomePage from "./components/HomePage";
 import AuthPage from "./components/AuthPage";
 import DashboardPage from "./components/DashboardPage";
 import JoinMyCircle from "./components/JoinMyCircle";
-import SendInvitation from "./components/SendInvitation";
+import SendInvitationToUser from "./components/SendInvitationToUser";
 import CircleSettingsPage from "./components/CircleSettingsPage";
 import UserSettingsPage from "./components/UserSettingsPage";
 import UserDetailsPage from "./components/UserDetailsPage";
@@ -41,7 +41,7 @@ function App() {
         <Route path="/auth" element={<AuthPage />} /> */}
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/joincircle" element={<JoinMyCircle />} />
-        <Route path="/sendinvite" element={<SendInvitation />} />
+        <Route path="/sendinvite" element={<SendInvitationToUser />} />
         <Route path="/circlesettings" element={<CircleSettingsPage />} />
         <Route path="/usersettings" element={<UserSettingsPage />} />
         <Route path="/userdetails" element={<UserDetailsPage />} />
