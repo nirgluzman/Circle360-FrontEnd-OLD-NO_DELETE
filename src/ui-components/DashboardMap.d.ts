@@ -7,12 +7,17 @@
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ImageProps, ViewProps } from "@aws-amplify/ui-react";
-export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
+export declare type PrimitiveOverrideProps<T> = Partial<T> &
+  React.DOMAttributes<HTMLDivElement>;
 export declare type DashboardMapOverridesProps = {
-    DashboardMap?: PrimitiveOverrideProps<ViewProps>;
-    QRCodeImage?: PrimitiveOverrideProps<ImageProps>;
+  DashboardMap?: PrimitiveOverrideProps<ViewProps>;
+  QRCodeImage?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
-export declare type DashboardMapProps = React.PropsWithChildren<Partial<ViewProps> & {
+export declare type DashboardMapProps = React.PropsWithChildren<
+  Partial<ViewProps> & {
     overrides?: DashboardMapOverridesProps | undefined | null;
-}>;
-export default function DashboardMap(props: DashboardMapProps): React.ReactElement;
+  }
+>;
+export default function DashboardMap(
+  props: DashboardMapProps
+): React.ReactElement;

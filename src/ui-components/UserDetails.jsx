@@ -44,155 +44,6 @@ export default function UserDetails(props) {
         left="8.84%"
         right="30.23%"
         padding="0px 0px 0px 0px"
-<<<<<<< HEAD
-        {...getOverrideProps(overrides, "FormField")}
-      >
-        <Text
-          fontFamily="Inter"
-          fontSize="14px"
-          fontWeight="400"
-          color="rgba(13,26,38,1)"
-          lineHeight="21px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="89.95%"
-          bottom="0%"
-          left="0.28%"
-          right="25.07%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Your email address cannot be changed."
-          {...getOverrideProps(
-            overrides,
-            "Your email address cannot be changed."
-          )}
-        ></Text>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="352px"
-          height="48px"
-          justifyContent="center"
-          alignItems="center"
-          position="absolute"
-          top="calc(50% - 23px - -51.5px)"
-          left="calc(50% - 175px - 0.5px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="5px"
-          padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "Email")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(128,128,128,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Email"
-            {...getOverrideProps(overrides, "placeholder37133074")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="352px"
-          height="48px"
-          justifyContent="center"
-          alignItems="center"
-          position="absolute"
-          top="calc(50% - 23px - 15.5px)"
-          left="calc(50% - 175px - 0.5px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="5px"
-          padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "LastName")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(128,128,128,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Last"
-            {...getOverrideProps(overrides, "placeholder37133070")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="352px"
-          height="48px"
-          justifyContent="center"
-          alignItems="center"
-          position="absolute"
-          top="calc(50% - 23px - 82.5px)"
-          left="calc(50% - 175px - 1.5px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="5px"
-          padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "FirstName")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(128,128,128,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="First"
-            {...getOverrideProps(overrides, "placeholder37133072")}
-          ></Text>
-        </Flex>
-      </View>
-=======
         whiteSpace="pre-wrap"
         children="Your email address cannot be changed."
         {...getOverrideProps(
@@ -200,7 +51,6 @@ export default function UserDetails(props) {
           "Your email address cannot be changed."
         )}
       ></Text>
->>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
       <Text
         fontFamily="Inter"
         fontSize="32px"
@@ -280,11 +130,7 @@ export default function UserDetails(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Profile"
-<<<<<<< HEAD
-          {...getOverrideProps(overrides, "Profile")}
-=======
           {...getOverrideProps(overrides, "Text")}
->>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
         ></Text>
       </View>
       <Image

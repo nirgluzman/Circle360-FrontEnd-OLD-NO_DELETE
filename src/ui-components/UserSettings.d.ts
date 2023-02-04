@@ -6,38 +6,39 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ButtonProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
-export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
+import {
+  ButtonProps,
+  IconProps,
+  ImageProps,
+  TextProps,
+  ViewProps,
+} from "@aws-amplify/ui-react";
+export declare type PrimitiveOverrideProps<T> = Partial<T> &
+  React.DOMAttributes<HTMLDivElement>;
 export declare type UserSettingsOverridesProps = {
-    UserSettings?: PrimitiveOverrideProps<ViewProps>;
-    DeleteAccountButton?: PrimitiveOverrideProps<ButtonProps>;
-    SignoutButton?: PrimitiveOverrideProps<ButtonProps>;
-    AppSettings?: PrimitiveOverrideProps<ViewProps>;
-    AppSettingsButton?: PrimitiveOverrideProps<ButtonProps>;
-    Icon37152790?: PrimitiveOverrideProps<IconProps>;
-    ">37132984"?: PrimitiveOverrideProps<TextProps>;
-    ProfileDetails?: PrimitiveOverrideProps<ViewProps>;
-    ProfileDetailsButton?: PrimitiveOverrideProps<ButtonProps>;
-    Icon37152788?: PrimitiveOverrideProps<IconProps>;
-    ">37132983"?: PrimitiveOverrideProps<TextProps>;
-<<<<<<< HEAD
-    UserSettingsPhotoSettings?: PrimitiveOverrideProps<ViewProps>;
-    EditButton?: PrimitiveOverrideProps<IconProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
-    Profile?: PrimitiveOverrideProps<TextProps>;
-    BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
-    BackIcon?: PrimitiveOverrideProps<IconProps>;
-    "My Circles"?: PrimitiveOverrideProps<TextProps>;
-=======
-    EditIcon?: PrimitiveOverrideProps<IconProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
-    Title?: PrimitiveOverrideProps<TextProps>;
-    BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
-    BackIcon?: PrimitiveOverrideProps<IconProps>;
-    Text?: PrimitiveOverrideProps<TextProps>;
->>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
+  UserSettings?: PrimitiveOverrideProps<ViewProps>;
+  DeleteAccountButton?: PrimitiveOverrideProps<ButtonProps>;
+  SignoutButton?: PrimitiveOverrideProps<ButtonProps>;
+  AppSettings?: PrimitiveOverrideProps<ViewProps>;
+  AppSettingsButton?: PrimitiveOverrideProps<ButtonProps>;
+  Icon37152790?: PrimitiveOverrideProps<IconProps>;
+  ">37132984"?: PrimitiveOverrideProps<TextProps>;
+  ProfileDetails?: PrimitiveOverrideProps<ViewProps>;
+  ProfileDetailsButton?: PrimitiveOverrideProps<ButtonProps>;
+  Icon37152788?: PrimitiveOverrideProps<IconProps>;
+  ">37132983"?: PrimitiveOverrideProps<TextProps>;
+  EditIcon?: PrimitiveOverrideProps<IconProps>;
+  image?: PrimitiveOverrideProps<ImageProps>;
+  Title?: PrimitiveOverrideProps<TextProps>;
+  BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
+  BackIcon?: PrimitiveOverrideProps<IconProps>;
+  Text?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type UserSettingsProps = React.PropsWithChildren<Partial<ViewProps> & {
+export declare type UserSettingsProps = React.PropsWithChildren<
+  Partial<ViewProps> & {
     overrides?: UserSettingsOverridesProps | undefined | null;
-}>;
-export default function UserSettings(props: UserSettingsProps): React.ReactElement;
+  }
+>;
+export default function UserSettings(
+  props: UserSettingsProps
+): React.ReactElement;

@@ -6,19 +6,10 @@
 
 /* eslint-disable */
 import * as React from "react";
-<<<<<<< HEAD
-import {
-  getOverrideProps,
-  useAuthSignOutAction,
-} from "@aws-amplify/ui-react/internal";
-import { Button, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
-=======
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Icon, Image, Text, View } from "@aws-amplify/ui-react";
->>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
 export default function UserSettings(props) {
   const { overrides, ...rest } = props;
-  const signOutOnClick = useAuthSignOutAction({ global: false });
   return (
     <View
       width="430px"
@@ -69,40 +60,7 @@ export default function UserSettings(props) {
         top="546px"
         left="39px"
         padding="0px 0px 0px 0px"
-<<<<<<< HEAD
-        {...getOverrideProps(overrides, "SignOutButton")}
-      >
-        <Button
-          width="350px"
-          position="absolute"
-          borderRadius="12px"
-          top="calc(50% - 23px - 0px)"
-          left="calc(50% - 175px - 0px)"
-          size="large"
-          isDisabled={false}
-          variation="primary"
-          children="SIGN OUT"
-          onClick={() => {
-            signOutOnClick();
-          }}
-          {...getOverrideProps(overrides, "SignOut")}
-        ></Button>
-      </View>
-      <View
-        width="350px"
-        height="46px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="545px"
-        left="37px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "AppSettingsButton37342728")}
-=======
         {...getOverrideProps(overrides, "AppSettings")}
->>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
       >
         <Button
           width="350px"
@@ -334,97 +292,12 @@ export default function UserSettings(props) {
           alignItems="unset"
           justifyContent="unset"
           position="absolute"
-<<<<<<< HEAD
-          top="64.44%"
-          bottom="17.78%"
-          left="84.91%"
-          right="0%"
-          {...getOverrideProps(overrides, "EditButton")}
-        ></Icon>
-        <Image
-          width="180px"
-          height="180px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="calc(50% - 90px - 0px)"
-          left="calc(50% - 90px - 16px)"
-          border="2px SOLID rgba(10,207,131,1)"
-          borderRadius="160px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
-      </View>
-      <Text
-        fontFamily="Inter"
-        fontSize="32px"
-        fontWeight="500"
-        color="rgba(13,26,38,1)"
-        lineHeight="48px"
-        textAlign="center"
-        display="block"
-        direction="column"
-        justifyContent="unset"
-        width="344px"
-        height="44px"
-        gap="unset"
-        alignItems="unset"
-        position="absolute"
-        top="12.02%"
-        bottom="83.26%"
-        left="10%"
-        right="10%"
-        padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children="Profile"
-        {...getOverrideProps(overrides, "Profile")}
-      ></Text>
-      <View
-        padding="0px 0px 0px 0px"
-        width="110px"
-        height="24px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="43px"
-        left="43px"
-        {...getOverrideProps(overrides, "BackToMyCircles")}
-      >
-        <Icon
-          width="18px"
-          height="15px"
-          viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
-          paths={[
-            {
-              d: "M7 4L7 0L0 7L7 14L7 9.9C12 9.9 15.5 11.5 18 15C17 10 14 5 7 4Z",
-              fill: "rgba(13,26,38,1)",
-              fillRule: "nonzero",
-            },
-          ]}
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
           top="20.83%"
           bottom="16.67%"
           left="0%"
           right="83.64%"
           {...getOverrideProps(overrides, "BackIcon")}
         ></Icon>
-=======
-          top="20.83%"
-          bottom="16.67%"
-          left="0%"
-          right="83.64%"
-          {...getOverrideProps(overrides, "BackIcon")}
-        ></Icon>
->>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -445,11 +318,7 @@ export default function UserSettings(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="My Circles"
-<<<<<<< HEAD
-          {...getOverrideProps(overrides, "My Circles")}
-=======
           {...getOverrideProps(overrides, "Text")}
->>>>>>> d94ebd4c3cd2999353495cad36e1727f0aa820b7
         ></Text>
       </View>
     </View>

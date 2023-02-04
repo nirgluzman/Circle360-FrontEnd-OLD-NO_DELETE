@@ -12,11 +12,7 @@ import UserSettingsPage from "./components/UserSettingsPage";
 import UserDetailsPage from "./components/UserDetailsPage";
 import UserAppSettingsPage from "./components/UserAppSettingsPage";
 
-const LandingPageOverrides = {
-  image: {
-    src: logo,
-  },
-};
+import { Auth, Hub } from "aws-amplify";
 
 function App() {
   Hub.listen("auth", (data) => {
@@ -40,18 +36,17 @@ function App() {
 
   return (
     <div className="App">
-      <LandingPage overrides={LandingPageOverrides} />
-      <Login />
-      <Signup />
-      <DashboardHeader />
-      <DashboardCircle />
-      <JoinCircle />
-      <CircleSettingsHeader />
-      <CircleSettingsMember />
-      <SendInvite />
-      <UserSettings />
-      <UserDetails />
-      <UserAppSettings />
+      <Routes>
+        {/* <Route path="/" element={<HomePage />} />
+        <Route path="/auth" element={<AuthPage />} /> */}
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/joincircle" element={<JoinMyCircle />} />
+        <Route path="/sendinvite" element={<SendInvitation />} />
+        <Route path="/circlesettings" element={<CircleSettingsPage />} />
+        <Route path="/usersettings" element={<UserSettingsPage />} />
+        <Route path="/userdetails" element={<UserDetailsPage />} />
+        <Route path="/userAppSettings" element={<UserAppSettingsPage />} />
+      </Routes>
     </div>
   );
 }
