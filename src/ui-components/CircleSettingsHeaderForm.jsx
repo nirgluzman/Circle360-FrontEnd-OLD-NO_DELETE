@@ -9,7 +9,7 @@ import * as React from "react";
 import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { fetchByPath, validateField } from "./utils";
-export default function SendInviteForm(props) {
+export default function CircleSettingsHeaderForm(props) {
   const { onSubmit, onValidate, onChange, overrides, ...rest } = props;
   const initialValues = {
     Field0: "",
@@ -21,7 +21,7 @@ export default function SendInviteForm(props) {
     setErrors({});
   };
   const validations = {
-    Field0: [{ type: "Required" }, { type: "Email" }],
+    Field0: [{ type: "Required" }],
   };
   const runValidationTasks = async (
     fieldName,
@@ -71,14 +71,13 @@ export default function SendInviteForm(props) {
         }
         await onSubmit(modelFields);
       }}
-      {...getOverrideProps(overrides, "SendInviteForm")}
+      {...getOverrideProps(overrides, "CircleSettingsHeaderForm")}
       {...rest}
     >
       <TextField
-        label="Look's like you don't have a group."
-        descriptiveText=" Let’s send an invitation."
+        label="If you have an invite code, please type it here:"
         isRequired={true}
-        placeholder="Email"
+        placeholder="Invite Code"
         value={Field0}
         onChange={(e) => {
           let { value } = e.target;
@@ -117,7 +116,7 @@ export default function SendInviteForm(props) {
           {...getOverrideProps(overrides, "RightAlignCTASubFlex")}
         >
           <Button
-            children="Send Invitation"
+            children="Submit"
             type="submit"
             variation="primary"
             isDisabled={Object.values(errors).some((e) => e?.hasError)}

@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { SendInvite, SendInvitation, GroupCode } from "../ui-components";
+import { SendInvite, GroupCode, ProfileLogo } from "../ui-components";
 import logo from "../images/logo.png";
 import { styles } from "../utils/amplifyStyles";
 import { Flex } from "@aws-amplify/ui-react";
 import { useNavigate } from "react-router-dom";
 import validator from "validator";
-import { Alert } from "@aws-amplify/ui-react";
 import { SendInviteForm } from "../ui-components";
 
 export default function SendInvitationToUser() {
@@ -41,7 +40,7 @@ export default function SendInvitationToUser() {
     <div>
       <Flex justifyContent="center" alignItems="center" direction="column">
         {/* <SendInvite style={styles.center} overrides={SendInvitationOverrides} /> */}
-        <SendInvitation overrides={SendInvitationOverrides} />
+        <ProfileLogo overrides={SendInvitationOverrides} />
         <SendInviteForm onSubmit={handleSubmit} />
         <GroupCode />
       </Flex>

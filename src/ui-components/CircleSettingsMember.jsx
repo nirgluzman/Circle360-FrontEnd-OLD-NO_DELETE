@@ -110,7 +110,7 @@ export default function CircleSettingsMember(props) {
           right="13.14%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Member"
+          children=""
           {...getOverrideProps(overrides, "MemberName")}
         ></Text>
       </View>

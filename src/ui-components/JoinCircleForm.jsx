@@ -6,11 +6,12 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
+import { Button, Flex, Grid, TextField, useTheme } from "@aws-amplify/ui-react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { fetchByPath, validateField } from "./utils";
-export default function SendInviteForm(props) {
+export default function JoinCircleForm(props) {
   const { onSubmit, onValidate, onChange, overrides, ...rest } = props;
+  const { tokens } = useTheme();
   const initialValues = {
     Field0: "",
   };
@@ -21,7 +22,7 @@ export default function SendInviteForm(props) {
     setErrors({});
   };
   const validations = {
-    Field0: [{ type: "Required" }, { type: "Email" }],
+    Field0: [{ type: "Required" }],
   };
   const runValidationTasks = async (
     fieldName,
@@ -42,8 +43,8 @@ export default function SendInviteForm(props) {
   return (
     <Grid
       as="form"
-      rowGap="15px"
-      columnGap="15px"
+      rowGap={tokens.space.medium.value}
+      columnGap={tokens.space.medium.value}
       padding="20px"
       onSubmit={async (event) => {
         event.preventDefault();
@@ -71,14 +72,13 @@ export default function SendInviteForm(props) {
         }
         await onSubmit(modelFields);
       }}
-      {...getOverrideProps(overrides, "SendInviteForm")}
+      {...getOverrideProps(overrides, "JoinCircleForm")}
       {...rest}
     >
       <TextField
-        label="Look's like you don't have a group."
-        descriptiveText=" Let’s send an invitation."
+        label="If you have an invite code, please type it here:"
         isRequired={true}
-        placeholder="Email"
+        placeholder="Invite Code"
         value={Field0}
         onChange={(e) => {
           let { value } = e.target;
@@ -103,21 +103,12 @@ export default function SendInviteForm(props) {
         justifyContent="space-between"
         {...getOverrideProps(overrides, "CTAFlex")}
       >
-        <Button
-          children="Clear"
-          type="reset"
-          onClick={(event) => {
-            event.preventDefault();
-            resetStateValues();
-          }}
-          {...getOverrideProps(overrides, "ClearButton")}
-        ></Button>
         <Flex
-          gap="15px"
+          gap={tokens.space.medium.value}
           {...getOverrideProps(overrides, "RightAlignCTASubFlex")}
         >
           <Button
-            children="Send Invitation"
+            children="Join"
             type="submit"
             variation="primary"
             isDisabled={Object.values(errors).some((e) => e?.hasError)}
