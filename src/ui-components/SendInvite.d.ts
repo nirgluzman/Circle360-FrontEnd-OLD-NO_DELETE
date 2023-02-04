@@ -6,17 +6,17 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ButtonProps, FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { ButtonProps, IconProps, ImageProps, TextFieldProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type SendInviteOverridesProps = {
     SendInvite?: PrimitiveOverrideProps<ViewProps>;
     QRCodeImage?: PrimitiveOverrideProps<ImageProps>;
     InvitationCode?: PrimitiveOverrideProps<TextProps>;
     "Here is your invitation code:"?: PrimitiveOverrideProps<TextProps>;
+    "Frame 418"?: PrimitiveOverrideProps<ViewProps>;
     SendInvite37242856?: PrimitiveOverrideProps<ViewProps>;
     SendInviteButton?: PrimitiveOverrideProps<ButtonProps>;
-    EmailInput?: PrimitiveOverrideProps<FlexProps>;
-    placeholder?: PrimitiveOverrideProps<TextProps>;
+    EmailTextField?: PrimitiveOverrideProps<TextFieldProps>;
     "Please enter the email of the member you would like to invite:"?: PrimitiveOverrideProps<TextProps>;
     Title?: PrimitiveOverrideProps<TextProps>;
     BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;

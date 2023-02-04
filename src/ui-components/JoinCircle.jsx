@@ -7,7 +7,15 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import {
+  Button,
+  Flex,
+  Icon,
+  Image,
+  Text,
+  TextField,
+  View,
+} from "@aws-amplify/ui-react";
 export default function JoinCircle(props) {
   const { overrides, ...rest } = props;
   return (
@@ -24,108 +32,110 @@ export default function JoinCircle(props) {
       {...getOverrideProps(overrides, "JoinCircle")}
       {...rest}
     >
-      <Button
+      <View
         width="350px"
+        height="121px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
         position="absolute"
-        borderRadius="12px"
-        top="320px"
+        top="245px"
         left="40px"
-        size="large"
-        isDisabled={false}
-        variation="primary"
-        children="JOIN"
-        {...getOverrideProps(overrides, "JoinButton")}
-      ></Button>
-      <Flex
-        gap="10px"
-        direction="row"
-        width="352px"
-        height="48px"
-        justifyContent="center"
-        alignItems="center"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Event")}
+      >
+        <Button
+          width="350px"
+          position="absolute"
+          borderRadius="12px"
+          top="75px"
+          left="0px"
+          size="large"
+          isDisabled={false}
+          variation="primary"
+          children="JOIN"
+          {...getOverrideProps(overrides, "JoinButton")}
+        ></Button>
+        <TextField
+          placeholder="Invite Code"
+          width="299px"
+          height="42px"
+          position="absolute"
+          top="calc(50% - 21px - 39.5px)"
+          left="calc(50% - 149.5px - -0.5px)"
+          size="default"
+          isDisabled={false}
+          labelHidden={true}
+          variation="default"
+          {...getOverrideProps(overrides, "JoinCircleField")}
+        ></TextField>
+      </View>
+      <View
+        width="350px"
+        height="100px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
         position="absolute"
-        top="calc(50% - 23px - 214px)"
-        left="calc(50% - 175px - 1px)"
-        border="1px SOLID rgba(0,0,0,1)"
-        borderRadius="5px"
-        padding="4px 0px 0px 16px"
-        {...getOverrideProps(overrides, "CodeInput")}
+        top="calc(50% - 50px - 304px)"
+        left="calc(50% - 175px - 0px)"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Title38892769")}
       >
         <Text
           fontFamily="Inter"
-          fontSize="16px"
+          fontSize="14px"
           fontWeight="400"
-          color="rgba(128,128,128,1)"
-          lineHeight="24px"
+          color="rgba(13,26,38,1)"
+          lineHeight="21px"
           textAlign="left"
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
+          width="350px"
           height="unset"
           gap="unset"
           alignItems="unset"
-          grow="1"
-          shrink="1"
-          basis="0"
-          position="relative"
+          position="absolute"
+          top="79%"
+          bottom="0%"
+          left="0%"
+          right="0%"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Invite code "
-          {...getOverrideProps(overrides, "CodePlaceholder")}
+          children="If you have an invite code, please type it here:"
+          {...getOverrideProps(
+            overrides,
+            "If you have an invite code, please type it here:"
+          )}
         ></Text>
-      </Flex>
-      <Text
-        fontFamily="Inter"
-        fontSize="14px"
-        fontWeight="400"
-        color="rgba(13,26,38,1)"
-        lineHeight="21px"
-        textAlign="left"
-        display="block"
-        direction="column"
-        justifyContent="unset"
-        width="350px"
-        height="unset"
-        gap="unset"
-        alignItems="unset"
-        position="absolute"
-        top="20.49%"
-        bottom="77.25%"
-        left="9.3%"
-        right="9.3%"
-        padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children="If you have an invite code, please type it here:"
-        {...getOverrideProps(
-          overrides,
-          "If you have an invite code, please type it here:"
-        )}
-      ></Text>
-      <Text
-        fontFamily="Inter"
-        fontSize="32px"
-        fontWeight="500"
-        color="rgba(13,26,38,1)"
-        lineHeight="48px"
-        textAlign="center"
-        display="block"
-        direction="column"
-        justifyContent="unset"
-        width="161px"
-        height="44px"
-        gap="unset"
-        alignItems="unset"
-        position="absolute"
-        top="12.02%"
-        bottom="83.26%"
-        left="31.4%"
-        right="31.16%"
-        padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children="Join Circle"
-        {...getOverrideProps(overrides, "Title")}
-      ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="32px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="48px"
+          textAlign="center"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="161px"
+          height="44px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="0%"
+          bottom="56%"
+          left="27.14%"
+          right="26.86%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Join Circle"
+          {...getOverrideProps(overrides, "Title36943866")}
+        ></Text>
+      </View>
       <Flex
         gap="12px"
         direction="row"

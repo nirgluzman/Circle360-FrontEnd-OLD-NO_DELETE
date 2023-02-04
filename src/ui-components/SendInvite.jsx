@@ -7,7 +7,14 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import {
+  Button,
+  Icon,
+  Image,
+  Text,
+  TextField,
+  View,
+} from "@aws-amplify/ui-react";
 export default function SendInvite(props) {
   const { overrides, ...rest } = props;
   return (
@@ -94,62 +101,50 @@ export default function SendInvite(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 63.5px - 142.5px)"
-        left="calc(50% - 175px - 0px)"
+        top="260px"
+        left="40px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "SendInvite37242856")}
+        {...getOverrideProps(overrides, "Frame 418")}
       >
-        <Button
+        <View
           width="350px"
+          height="127px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
           position="absolute"
-          borderRadius="12px"
-          top="calc(50% - 23px - -31.5px)"
+          top="calc(50% - 63.5px - 0px)"
           left="calc(50% - 175px - 0px)"
-          size="large"
-          isDisabled={false}
-          variation="primary"
-          children="SEND INVITATION"
-          {...getOverrideProps(overrides, "SendInviteButton")}
-        ></Button>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="352px"
-          height="48px"
-          justifyContent="center"
-          alignItems="center"
-          position="absolute"
-          top="calc(50% - 23px - 50.5px)"
-          left="calc(50% - 175px - 1px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="5px"
-          padding="0px 0px 0px 16px"
-          {...getOverrideProps(overrides, "EmailInput")}
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "SendInvite37242856")}
         >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(128,128,128,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Email"
-            {...getOverrideProps(overrides, "placeholder")}
-          ></Text>
-        </Flex>
+          <Button
+            width="350px"
+            position="absolute"
+            borderRadius="12px"
+            top="calc(50% - 23px - -31.5px)"
+            left="calc(50% - 175px - 0px)"
+            size="large"
+            isDisabled={false}
+            variation="primary"
+            children="SEND INVITATION"
+            {...getOverrideProps(overrides, "SendInviteButton")}
+          ></Button>
+          <TextField
+            placeholder="Email"
+            width="330px"
+            height="42px"
+            position="absolute"
+            top="0px"
+            left="20px"
+            size="default"
+            isDisabled={false}
+            labelHidden={true}
+            variation="default"
+            {...getOverrideProps(overrides, "EmailTextField")}
+          ></TextField>
+        </View>
       </View>
       <Text
         fontFamily="Inter"

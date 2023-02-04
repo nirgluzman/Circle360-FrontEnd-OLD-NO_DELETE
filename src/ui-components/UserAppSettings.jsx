@@ -7,7 +7,14 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import {
+  Icon,
+  Image,
+  SliderField,
+  SwitchField,
+  Text,
+  View,
+} from "@aws-amplify/ui-react";
 export default function UserAppSettings(props) {
   const { overrides, ...rest } = props;
   return (
@@ -25,180 +32,6 @@ export default function UserAppSettings(props) {
       {...rest}
     >
       <View
-        width="351px"
-        height="36px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="732px"
-        left="37px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "RadiusSlider")}
-      >
-        <Flex
-          gap="8px"
-          direction="column"
-          width="197px"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          position="absolute"
-          top="0px"
-          left="68px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Slider37172794")}
-        >
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="center"
-            alignItems="center"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            borderRadius="4px"
-            padding="8px 0px 8px 0px"
-            {...getOverrideProps(overrides, "SliderField37172799")}
-          >
-            <View
-              width="unset"
-              height="20px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame37172800")}
-            >
-              <View
-                width="197px"
-                height="6px"
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="7px"
-                left="0%"
-                right="0%"
-                borderRadius="6px"
-                padding="0px 0px 0px 0px"
-                backgroundColor="rgba(239,240,240,1)"
-                {...getOverrideProps(overrides, "Rectangle 29037172801")}
-              ></View>
-              <View
-                width="98.5px"
-                height="6px"
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="7px"
-                left="0%"
-                right="50%"
-                borderRadius="6px 0px 0px 6px"
-                padding="0px 0px 0px 0px"
-                backgroundColor="rgba(76,203,104,1)"
-                {...getOverrideProps(overrides, "Rectangle 28937172802")}
-              ></View>
-              <Icon
-                width="20px"
-                height="20px"
-                viewBox={{ minX: 0, minY: 0, width: 20, height: 20 }}
-                paths={[
-                  {
-                    d: "M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z",
-                    fill: "rgba(239,240,240,1)",
-                    fillRule: "nonzero",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="0px"
-                left="calc(50% - 10px - -2.5px)"
-                {...getOverrideProps(overrides, "Ellipse 837172803")}
-              ></Icon>
-            </View>
-          </Flex>
-        </Flex>
-        <View
-          width="70px"
-          height="36px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="0px"
-          left="281px"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="4px"
-          padding="0px 0px 0px 0px"
-          backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Rectangle 116537152935")}
-        ></View>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="center"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="68px"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="8.33%"
-          bottom="8.33%"
-          left="80.34%"
-          right="0.28%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="5 km"
-          {...getOverrideProps(overrides, "5 km")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="65px"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="8.33%"
-          bottom="8.33%"
-          left="0%"
-          right="81.48%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="1 km"
-          {...getOverrideProps(overrides, "1 km")}
-        ></Text>
-      </View>
-      <View
         width="350px"
         height="100px"
         display="block"
@@ -206,7 +39,7 @@ export default function UserAppSettings(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="626px"
+        top="682px"
         left="38px"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "RadiusSettings")}
@@ -276,180 +109,6 @@ export default function UserAppSettings(props) {
           whiteSpace="pre-wrap"
           children="Update radius"
           {...getOverrideProps(overrides, "Title37133126")}
-        ></Text>
-      </View>
-      <View
-        width="350px"
-        height="36px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="566px"
-        left="37px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "UpdateFrequencySlider")}
-      >
-        <Flex
-          gap="8px"
-          direction="column"
-          width="197px"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          position="absolute"
-          top="0px"
-          left="68px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Slider37152922")}
-        >
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="center"
-            alignItems="center"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            borderRadius="4px"
-            padding="8px 0px 8px 0px"
-            {...getOverrideProps(overrides, "SliderField37152926")}
-          >
-            <View
-              width="unset"
-              height="20px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame37152927")}
-            >
-              <View
-                width="197px"
-                height="6px"
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="7px"
-                left="0%"
-                right="0%"
-                borderRadius="6px"
-                padding="0px 0px 0px 0px"
-                backgroundColor="rgba(239,240,240,1)"
-                {...getOverrideProps(overrides, "Rectangle 29037152928")}
-              ></View>
-              <View
-                width="98.5px"
-                height="6px"
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="7px"
-                left="0%"
-                right="50%"
-                borderRadius="6px 0px 0px 6px"
-                padding="0px 0px 0px 0px"
-                backgroundColor="rgba(76,203,104,1)"
-                {...getOverrideProps(overrides, "Rectangle 28937152929")}
-              ></View>
-              <Icon
-                width="20px"
-                height="20px"
-                viewBox={{ minX: 0, minY: 0, width: 20, height: 20 }}
-                paths={[
-                  {
-                    d: "M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z",
-                    fill: "rgba(239,240,240,1)",
-                    fillRule: "nonzero",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="0px"
-                left="calc(50% - 10px - -2.5px)"
-                {...getOverrideProps(overrides, "Ellipse 837152930")}
-              ></Icon>
-            </View>
-          </Flex>
-        </Flex>
-        <View
-          width="70px"
-          height="36px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="calc(50% - 18px - 0px)"
-          left="calc(50% - 35px - -140px)"
-          border="1px SOLID rgba(0,0,0,1)"
-          borderRadius="4px"
-          padding="0px 0px 0px 0px"
-          backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Rectangle 116537152934")}
-        ></View>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="center"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="68px"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="8.33%"
-          bottom="8.33%"
-          left="80.29%"
-          right="0.29%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="1 hr"
-          {...getOverrideProps(overrides, "1 hr")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(13,26,38,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="65px"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="8.33%"
-          bottom="8.33%"
-          left="0%"
-          right="81.43%"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="5 min"
-          {...getOverrideProps(overrides, "5 min")}
         ></Text>
       </View>
       <View
@@ -540,8 +199,8 @@ export default function UserAppSettings(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="340px"
-        left="38px"
+        top="calc(50% - 50px - 76px)"
+        left="calc(50% - 175px - 2px)"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Incognito")}
       >
@@ -611,84 +270,30 @@ export default function UserAppSettings(props) {
           children="Incognito"
           {...getOverrideProps(overrides, "Title37133114")}
         ></Text>
-        <Flex
-          gap="8px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="center"
-          alignItems="center"
+        <View
+          width="52px"
+          height="41px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
           position="absolute"
-          top="0px"
-          left="268px"
-          padding="8px 8px 8px 8px"
-          {...getOverrideProps(overrides, "OnOffToggle37222754")}
+          top="40px"
+          left="298px"
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "Frame 419")}
         >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="right"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="On"
-            {...getOverrideProps(overrides, "label37222755")}
-          ></Text>
-          <Flex
-            padding="0px 0px 0px 0px"
-            width="36px"
-            height="20px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            shrink="0"
-            position="relative"
-            {...getOverrideProps(overrides, "switch37222756")}
-          >
-            <View
-              width="36px"
-              height="20px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="0px"
-              left="0px"
-              borderRadius="16px"
-              padding="0px 0px 0px 0px"
-              backgroundColor="rgba(76,203,104,1)"
-              {...getOverrideProps(overrides, "track37222757")}
-            ></View>
-            <View
-              width="16px"
-              height="16px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="2px"
-              left="18px"
-              borderRadius="16px"
-              padding="0px 0px 0px 0px"
-              backgroundColor="rgba(255,255,255,1)"
-              {...getOverrideProps(overrides, "thumb37222758")}
-            ></View>
-          </Flex>
-        </Flex>
+          <SwitchField
+            position="absolute"
+            top="0px"
+            left="-7px"
+            size="default"
+            defaultChecked={true}
+            isDisabled={false}
+            labelPosition="end"
+            {...getOverrideProps(overrides, "IncognitoSwitchField")}
+          ></SwitchField>
+        </View>
       </View>
       <View
         width="350px"
@@ -769,84 +374,16 @@ export default function UserAppSettings(props) {
           children="Push notifications"
           {...getOverrideProps(overrides, "Title37133109")}
         ></Text>
-        <Flex
-          gap="8px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="center"
-          alignItems="center"
+        <SwitchField
           position="absolute"
-          top="0px"
-          left="268px"
-          padding="8px 8px 8px 8px"
-          {...getOverrideProps(overrides, "OnOffToggle37222746")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="right"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="On"
-            {...getOverrideProps(overrides, "label37222747")}
-          ></Text>
-          <Flex
-            padding="0px 0px 0px 0px"
-            width="36px"
-            height="20px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            shrink="0"
-            position="relative"
-            {...getOverrideProps(overrides, "switch37222748")}
-          >
-            <View
-              width="36px"
-              height="20px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="0px"
-              left="0px"
-              borderRadius="16px"
-              padding="0px 0px 0px 0px"
-              backgroundColor="rgba(76,203,104,1)"
-              {...getOverrideProps(overrides, "track37222749")}
-            ></View>
-            <View
-              width="16px"
-              height="16px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="2px"
-              left="18px"
-              borderRadius="16px"
-              padding="0px 0px 0px 0px"
-              backgroundColor="rgba(255,255,255,1)"
-              {...getOverrideProps(overrides, "thumb37222750")}
-            ></View>
-          </Flex>
-        </Flex>
+          top="40px"
+          left="298px"
+          size="default"
+          defaultChecked={true}
+          isDisabled={false}
+          labelPosition="end"
+          {...getOverrideProps(overrides, "PushSwitchField")}
+        ></SwitchField>
       </View>
       <Text
         fontFamily="Inter"
@@ -927,7 +464,7 @@ export default function UserAppSettings(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Profile"
-          {...getOverrideProps(overrides, "Text")}
+          {...getOverrideProps(overrides, "Text37133095")}
         ></Text>
       </View>
       <Image
@@ -945,6 +482,74 @@ export default function UserAppSettings(props) {
         objectFit="cover"
         {...getOverrideProps(overrides, "ProfileImage")}
       ></Image>
+      <SliderField
+        defaultValue="1"
+        position="absolute"
+        top="580px"
+        left="67px"
+        label=""
+        isDisabled={false}
+        labelHidden={false}
+        isValueHidden={false}
+        size="large"
+        {...getOverrideProps(overrides, "FrequencySliderField")}
+      ></SliderField>
+      <SliderField
+        defaultValue="1"
+        position="absolute"
+        top="802px"
+        left="57px"
+        label=""
+        isDisabled={false}
+        labelHidden={false}
+        isValueHidden={false}
+        size="large"
+        {...getOverrideProps(overrides, "RadiusSliderField")}
+      ></SliderField>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="400"
+        color="rgba(13,26,38,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="583px"
+        left="352px"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Min"
+        {...getOverrideProps(overrides, "Text39042843")}
+      ></Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="400"
+        color="rgba(13,26,38,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="805px"
+        left="340px"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="km"
+        {...getOverrideProps(overrides, "Text39032859")}
+      ></Text>
     </View>
   );
 }
