@@ -9,45 +9,29 @@ import {
 } from "@react-google-maps/api";
 import { Flex } from "@aws-amplify/ui-react";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { myCircles } from "../App";
 
 import { DashboardHeader, DashboardCircle } from "../ui-components";
 
-export default function DashboardPage() {
+export default function DashboardPage({ myCircles }) {
   const navigate = useNavigate();
+  const { _id } = useParams();
 
-  const myCircles = [
-    {
-      _id: 1,
-      groupName: "Family",
-    },
-    { _id: 2, groupName: "Friends" },
-    { _id: 3, groupName: "Parents" },
-    { _id: 4, groupName: "Collegues" },
-    { _id: 5, groupName: "Other" },
-  ];
   const DashboardPageOverrides = {
     ProfileImage: {
       alt: "Circle360 logo",
       src: logo,
       onClick: () => navigate("/usersettings"),
     },
-    ConfigIcon: {
-      className: "custom-btn",
-      onClick: () => navigate("/circleSettings"),
-    },
 
-    DeleteIcon: {
-      className: "custom-btn",
-      onClick: () => navigate("/"),
-    },
     JoinButton: {
       className: "custom-btn",
       onClick: () => navigate("/joincircle"),
     },
     CreateNewButton: {
       className: "custom-btn",
-      onClick: () => navigate("/sendinvite"),
+      onClick: () => navigate("/circleSettings"),
     },
   };
 
@@ -64,18 +48,36 @@ export default function DashboardPage() {
   if (!isLoaded) {
     return <div>Loading...</div>;
   }
+  // var p1 = new google.maps.LatLng(45.463688, 9.18814);
+  // var p2 = new google.maps.LatLng(46.0438317, 9.75936230000002);
 
+  // alert(calcDistance(p1, p2));
+
+  // //calculates distance between two points in km's
+  // function calcDistance(p1, p2) {
+  //   return (
+  //     google.maps.geometry.spherical.computeDistanceBetween(p1, p2) / 1000
+  //   ).toFixed(2);
+  // }
   return (
     <Flex justifyContent="center" alignItems="center" direction="column">
       <DashboardHeader overrides={DashboardPageOverrides} />
+
       {myCircles?.map((item) => (
         <div key={item._id}>
           <DashboardCircle
             key={item._id}
-            overrides={
-              (DashboardPageOverrides,
-              { CircleName: { children: item.groupName } })
-            }
+            overrides={{
+              CircleName: { children: item.groupName },
+              DeleteIcon: {
+                className: "custom-btn",
+                onClick: () => navigate("/"),
+              },
+              ConfigIcon: {
+                className: "custom-btn",
+                onClick: () => navigate(`/circleSettings/${item._id}`),
+              },
+            }}
           />
         </div>
       ))}
@@ -146,7 +148,7 @@ function Map() {
         id: 5,
         nickname: "Ve",
         email: "ve@gmail.com",
-        position: { lat: 40.712777, lng: -74.005954 },
+        position: { lat: 50.712777, lng: 14.005954 },
         image: {
           url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
           scaledSize: size, // scaled size
