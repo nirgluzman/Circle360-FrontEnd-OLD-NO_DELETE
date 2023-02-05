@@ -16,7 +16,26 @@ html {
 
 .map-container {
   align-self: center;
-  width: 80vw;
+  width: 30vw;
   height: 30vh;
   margin: 10 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .map-container {
+    align-self: center;
+    width: 60vw;
+    height: 30vh;
+    margin: 10 auto;
+  }
+}
+@media only screen and (max-width: 430px) {
+  /* For mobile phones: */
+  .map-container {
+    align-self: center;
+    width: 80vw;
+    height: 30vh;
+    margin: 10 auto;
+  }
 }
