@@ -4,11 +4,11 @@ import logo from "../images/logo.png";
 import { styles } from "../utils/amplifyStyles";
 import { Flex } from "@aws-amplify/ui-react";
 import { useNavigate, useParams } from "react-router-dom";
-import { myCircles } from "../App";
 
-function CircleSettingsPage({ myCircles }) {
+export default function CircleSettingsPage({ myCircles }) {
   console.log("Circles", myCircles);
-  const { id } = useParams();
+  const { _id } = useParams();
+  console.log("id", _id);
   const navigate = useNavigate();
 
   return (
@@ -17,7 +17,7 @@ function CircleSettingsPage({ myCircles }) {
         <CircleSettingsHeader
           style={styles.center}
           overrides={{
-            GroupName: { children: myCircles[0].groupName },
+            GroupName: { children: myCircles[_id - 1].groupName },
             ProfileImage: {
               alt: "Circle360 logo",
               src: logo,
@@ -33,10 +33,11 @@ function CircleSettingsPage({ myCircles }) {
             },
           }}
         />
-        {myCircles.users?.map((item, key) => (
-          <div key={item.id}>
+
+        {myCircles[_id - 1].users?.map((item, key) => (
+          <div key={item._id}>
             <CircleSettingsMember
-              key={item.id}
+              key={item._id}
               overrides={{
                 MemberName: { children: item.nickName },
                 DeleteIcon: {
@@ -51,5 +52,3 @@ function CircleSettingsPage({ myCircles }) {
     </div>
   );
 }
-
-export default CircleSettingsPage;

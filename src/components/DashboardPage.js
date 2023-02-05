@@ -10,7 +10,6 @@ import {
 import { Flex } from "@aws-amplify/ui-react";
 
 import { useNavigate, useParams } from "react-router-dom";
-import { myCircles } from "../App";
 
 import { DashboardHeader, DashboardCircle } from "../ui-components";
 
@@ -25,6 +24,10 @@ export default function DashboardPage({ myCircles }) {
       onClick: () => navigate("/usersettings"),
     },
 
+    JoinButton: {
+      className: "custom-btn",
+      onClick: () => navigate("/joincircle"),
+    },
     JoinButton: {
       className: "custom-btn",
       onClick: () => navigate("/joincircle"),
