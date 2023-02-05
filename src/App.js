@@ -48,21 +48,21 @@ function App() {
       groupName: "Friends",
       users: [
         {
-          _id: 1,
+          _id: 4,
           email: "nir@gmail.com",
           nickName: "Reagan",
           ProfileImage: "",
           admin: false,
         },
         {
-          _id: 2,
+          _id: 5,
           email: "nir@gmail.com",
           nickName: "Alessandra",
           ProfileImage: "",
           admin: false,
         },
         {
-          _id: 3,
+          _id: 6,
           email: "nir@gmail.com",
           nickName: "Ve",
           ProfileImage: "",
@@ -75,21 +75,21 @@ function App() {
       groupName: "Parents",
       users: [
         {
-          _id: 1,
+          _id: 7,
           email: "nir@gmail.com",
           nickName: "Miki",
           ProfileImage: "",
           admin: false,
         },
         {
-          _id: 2,
+          _id: 8,
           email: "nir@gmail.com",
           nickName: "Dola",
           ProfileImage: "",
           admin: false,
         },
         {
-          _id: 3,
+          _id: 9,
           email: "nir@gmail.com",
           nickName: "Timon",
           ProfileImage: "",
@@ -102,21 +102,21 @@ function App() {
       groupName: "Collegues",
       users: [
         {
-          _id: 1,
+          _id: 10,
           email: "nir@gmail.com",
           nickName: "Antonio",
           ProfileImage: "",
           admin: false,
         },
         {
-          _id: 2,
+          _id: 11,
           email: "nir@gmail.com",
           nickName: "Reddy",
           ProfileImage: "",
           admin: false,
         },
         {
-          _id: 3,
+          _id: 12,
           email: "nir@gmail.com",
           nickName: "Jack",
           ProfileImage: "",
@@ -128,9 +128,27 @@ function App() {
       _id: 5,
       groupName: "Other",
       users: [
-        { _id: 1, nickName: "Armin", ProfileImage: "", admin: false },
-        { _id: 2, nickName: "Stefan", ProfileImage: "", admin: false },
-        { _id: 3, nickName: "Radu", ProfileImage: "", admin: true },
+        {
+          _id: 13,
+          email: "nir@gmail.com",
+          nickName: "Armin",
+          ProfileImage: "",
+          admin: false,
+        },
+        {
+          _id: 14,
+          email: "nir@gmail.com",
+          nickName: "Stefan",
+          ProfileImage: "",
+          admin: false,
+        },
+        {
+          _id: 15,
+          email: "nir@gmail.com",
+          nickName: "Radu",
+          ProfileImage: "",
+          admin: true,
+        },
       ],
     },
   ];
