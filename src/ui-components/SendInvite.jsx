@@ -44,6 +44,7 @@ export default function SendInvite(props) {
         padding="0px 0px 0px 0px"
         objectFit="cover"
         {...getOverrideProps(overrides, "QRCodeImage")}
+        {...getOverrideProps(overrides, "QRCodeImage")}
       ></Image>
       <Text
         fontFamily="Inter"

@@ -110,6 +110,30 @@ export default function UserAppSettings(props) {
           children="Update radius"
           {...getOverrideProps(overrides, "Title37133126")}
         ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(13,26,38,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="65px"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="8.33%"
+          bottom="8.33%"
+          left="0%"
+          right="81.43%"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="5 min"
+          {...getOverrideProps(overrides, "5 min")}
+        ></Text>
       </View>
       <View
         width="350px"
