@@ -49,4 +49,3 @@ export { default as ItemCard } from "./ItemCard";
 export { default as studioTheme } from "./studioTheme";
 export { default as JoinCircleForm } from "./JoinCircleForm";
 export { default as SendInviteForm } from "./SendInviteForm";
-export { default as UserDetailsForm } from "./UserDetailsForm";

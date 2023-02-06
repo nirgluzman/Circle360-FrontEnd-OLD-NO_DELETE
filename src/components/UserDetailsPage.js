@@ -4,7 +4,6 @@ import logo from "../images/logo.png";
 import { styles } from "../utils/amplifyStyles";
 import { Flex } from "@aws-amplify/ui-react";
 import { useNavigate } from "react-router-dom";
-import { UserDetailsForm } from "../ui-components";
 
 export default function UserDetailsPage() {
   const navigate = useNavigate();
@@ -32,7 +31,6 @@ export default function UserDetailsPage() {
     <div>
       <Flex justifyContent="center" alignItems="center" direction="column">
         <UserDetails style={styles.center} overrides={UserDetailsOverrides} />
-        <UserDetailsForm />
       </Flex>
     </div>
   );

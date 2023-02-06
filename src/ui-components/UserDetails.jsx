@@ -7,14 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import {
-  Button,
-  Icon,
-  Image,
-  Text,
-  TextField,
-  View,
-} from "@aws-amplify/ui-react";
+import { Icon, Image, Text, TextField, View } from "@aws-amplify/ui-react";
 export default function UserDetails(props) {
   const { overrides, ...rest } = props;
   return (
@@ -193,19 +186,6 @@ export default function UserDetails(props) {
           {...getOverrideProps(overrides, "NickNameField")}
         ></TextField>
       </View>
-      <Button
-        width="129px"
-        height="46px"
-        position="absolute"
-        borderRadius="12px"
-        top="calc(50% - 23px - 58px)"
-        left="calc(50% - 64.5px - 2.5px)"
-        size="large"
-        isDisabled={false}
-        variation="primary"
-        children="CONFIRM"
-        {...getOverrideProps(overrides, "Confirm")}
-      ></Button>
     </View>
   );
 }
