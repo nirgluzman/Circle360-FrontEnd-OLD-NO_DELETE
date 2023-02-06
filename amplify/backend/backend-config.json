@@ -16,7 +16,7 @@
           "passwordPolicyMinLength": 8
         },
         "signupAttributes": ["NICKNAME"],
-        "socialProviders": ["GOOGLE"],
+        "socialProviders": [],
         "usernameAttributes": ["EMAIL"],
         "verificationMechanisms": ["EMAIL"]
       },
