@@ -6,35 +6,21 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import {
-  ButtonProps,
-  IconProps,
-  ImageProps,
-  TextProps,
-  ViewProps,
-} from "@aws-amplify/ui-react";
-export declare type PrimitiveOverrideProps<T> = Partial<T> &
-  React.DOMAttributes<HTMLDivElement>;
+import { ButtonProps, IconProps, ImageProps, SwitchFieldProps, TextFieldProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type CircleSettingsHeaderOverridesProps = {
-  CircleSettingsHeader?: PrimitiveOverrideProps<ViewProps>;
-  SendInviteButton?: PrimitiveOverrideProps<ViewProps>;
-  Button?: PrimitiveOverrideProps<ButtonProps>;
-  GroupChenges?: PrimitiveOverrideProps<ViewProps>;
-  MyIcon37152740?: PrimitiveOverrideProps<ViewProps>;
-  Vector37152741?: PrimitiveOverrideProps<IconProps>;
-  Group?: PrimitiveOverrideProps<TextProps>;
-  HeaderCircleSettings?: PrimitiveOverrideProps<ViewProps>;
-  image?: PrimitiveOverrideProps<ImageProps>;
-  BackButton?: PrimitiveOverrideProps<ViewProps>;
-  MyIcon37132849?: PrimitiveOverrideProps<ViewProps>;
-  Vector37132850?: PrimitiveOverrideProps<IconProps>;
-  "My Circles"?: PrimitiveOverrideProps<TextProps>;
+    CircleSettingsHeader?: PrimitiveOverrideProps<ViewProps>;
+    InviteNewMemberButton?: PrimitiveOverrideProps<ButtonProps>;
+    EditIcon?: PrimitiveOverrideProps<IconProps>;
+    GroupName?: PrimitiveOverrideProps<TextProps>;
+    BackToMyCircles?: PrimitiveOverrideProps<ViewProps>;
+    BackIcon?: PrimitiveOverrideProps<IconProps>;
+    Text?: PrimitiveOverrideProps<TextProps>;
+    ProfileImage?: PrimitiveOverrideProps<ImageProps>;
+    PushSwitchField?: PrimitiveOverrideProps<SwitchFieldProps>;
+    GroupField?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
-export declare type CircleSettingsHeaderProps = React.PropsWithChildren<
-  Partial<ViewProps> & {
+export declare type CircleSettingsHeaderProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: CircleSettingsHeaderOverridesProps | undefined | null;
-  }
->;
-export default function CircleSettingsHeader(
-  props: CircleSettingsHeaderProps
-): React.ReactElement;
+}>;
+export default function CircleSettingsHeader(props: CircleSettingsHeaderProps): React.ReactElement;

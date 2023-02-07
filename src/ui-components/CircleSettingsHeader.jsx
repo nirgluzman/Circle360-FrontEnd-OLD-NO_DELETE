@@ -7,7 +7,15 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import {
+  Button,
+  Icon,
+  Image,
+  SwitchField,
+  Text,
+  TextField,
+  View,
+} from "@aws-amplify/ui-react";
 export default function CircleSettingsHeader(props) {
   const { overrides, ...rest } = props;
   return (
@@ -28,7 +36,7 @@ export default function CircleSettingsHeader(props) {
         width="350px"
         position="absolute"
         borderRadius="12px"
-        top="239px"
+        top="268px"
         left="40px"
         size="large"
         isDisabled={false}
@@ -57,18 +65,18 @@ export default function CircleSettingsHeader(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="38.82%"
-        bottom="55.59%"
-        left="67.91%"
-        right="27.91%"
+        top="34.47%"
+        bottom="59.94%"
+        left="78.14%"
+        right="17.67%"
         {...getOverrideProps(overrides, "EditIcon")}
       ></Icon>
       <Text
         fontFamily="Inter"
-        fontSize="32px"
-        fontWeight="500"
+        fontSize="16px"
+        fontWeight="400"
         color="rgba(13,26,38,1)"
-        lineHeight="48px"
+        lineHeight="24px"
         textAlign="right"
         display="block"
         direction="column"
@@ -78,13 +86,13 @@ export default function CircleSettingsHeader(props) {
         gap="unset"
         alignItems="unset"
         position="absolute"
-        top="34.78%"
-        bottom="51.55%"
-        left="9.3%"
-        right="35.12%"
+        top="67.39%"
+        bottom="18.94%"
+        left="-1.4%"
+        right="45.81%"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Group"
+        children="Make this group Public"
         {...getOverrideProps(overrides, "GroupName")}
       ></Text>
       <View
@@ -160,6 +168,29 @@ export default function CircleSettingsHeader(props) {
         objectFit="cover"
         {...getOverrideProps(overrides, "ProfileImage")}
       ></Image>
+      <SwitchField
+        position="absolute"
+        top="208px"
+        left="284px"
+        size="default"
+        defaultChecked={true}
+        isDisabled={false}
+        labelPosition="end"
+        {...getOverrideProps(overrides, "PushSwitchField")}
+      ></SwitchField>
+      <TextField
+        placeholder="Group"
+        width="299px"
+        height="42px"
+        position="absolute"
+        top="calc(50% - 21px - 39px)"
+        left="calc(50% - 149.5px - 34.5px)"
+        size="default"
+        isDisabled={false}
+        labelHidden={true}
+        variation="default"
+        {...getOverrideProps(overrides, "GroupField")}
+      ></TextField>
     </View>
   );
 }

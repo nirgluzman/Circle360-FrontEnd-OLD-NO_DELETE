@@ -15,22 +15,22 @@ import UserAppSettingsPage from "./components/UserAppSettingsPage";
 import { Auth, Hub } from "aws-amplify";
 
 function App() {
-  const myCircles = [
+  /*const myCircles = [
     {
-      _id: 1,
+      groupCode: 1,
       groupName: "Family",
+      public: true,
       users: [
         {
-          _id: 1,
           email: "nir@gmail.com",
-          nickName: "Nir",
-          ProfileImage: "",
+          nickname: "Nir",
+          profilePictureURL: "",
           admin: false,
         },
         {
           _id: 2,
           email: "nir@gmail.com",
-          nickName: "Payal",
+          nickname: "Payal",
           ProfileImage: "",
           admin: false,
         },
@@ -151,7 +151,42 @@ function App() {
         },
       ],
     },
-  ];
+  ];*/
+  const userData ={
+    email: "payal@gmail.com",
+    nickname:"payal",
+    profilePictureURL:"",
+    location:{lat:"", lng:""},
+    incognito:true,
+    myGroups:[
+      {
+        name:"Group1", admin: true, public: true, members: [
+          {
+          email: "anna@gmail.com",
+            accepted: true,
+          },
+          {
+            email: "nir@gmail.com",
+              accepted: true,
+            }
+        ]
+      }]
+  }
+  const groupData = {
+    groupCode: "ABC123",
+    public: true,
+    members: [
+      {
+        email: "payal@gmail.com", accepted: true
+      },
+      {
+        email: "anna@gmail.com", accepted: false
+      },
+      {
+        email: "nir@gmail.com", accepted: false
+      }
+    ]
+  }
   Hub.listen("auth", (data) => {
     switch (data.payload.event) {
       case "signIn":
@@ -178,18 +213,17 @@ function App() {
         <Route path="/auth" element={<AuthPage />} /> */}
         <Route
           path="/dashboard"
-          element={<DashboardPage myCircles={myCircles} />}
+          element={<DashboardPage userData={userData} groupData={groupData}/>}
         />
         <Route path="/joincircle" element={<JoinMyCircle />} />
         <Route path="/sendinvite" element={<SendInvitationToUser />} />
+        {/*<Route
+          path="/circlesettings"
+          element={<CircleSettingsPage myCircles={[]} />}
+      />*/}
         <Route
           path="/circlesettings/:_id"
-          element={<CircleSettingsPage myCircles={myCircles} />}
-        />
-
-        <Route
-          path="/circlesettings"
-          element={<CircleSettingsPage myCircles={myCircles} />}
+          element={<CircleSettingsPage userData={userData} groupData={groupData}/>}
         />
         <Route path="/usersettings" element={<UserSettingsPage />} />
         <Route path="/userdetails" element={<UserDetailsPage />} />

@@ -13,7 +13,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import { DashboardHeader, DashboardCircle } from "../ui-components";
 
-export default function DashboardPage({ myCircles }) {
+export default function DashboardPage({ userData, groupData }) {
   const navigate = useNavigate();
   const { _id } = useParams();
 
@@ -30,11 +30,13 @@ export default function DashboardPage({ myCircles }) {
     },
     JoinButton: {
       className: "custom-btn",
+      //isDisabled: myCircles.length > 4,
       onClick: () => navigate("/joincircle"),
     },
     CreateNewButton: {
       className: "custom-btn",
-      onClick: () => navigate("/circleSettings"),
+      //isDisabled: myCircles.length > 4,
+      //   onClick: () => navigate("/circlesettings"),
     },
   };
 

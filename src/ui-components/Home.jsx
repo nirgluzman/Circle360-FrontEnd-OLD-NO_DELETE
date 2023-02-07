@@ -12,8 +12,8 @@ export default function Home(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="430px"
-      height="932px"
+      width="390px"
+      height="844px"
       display="block"
       gap="unset"
       alignItems="unset"
